@@ -1,0 +1,1 @@
+* Fundamental: sketching out the interface to the class, rather than adding any implementation to it.

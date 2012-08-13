@@ -1,0 +1,2 @@
+* a basic code profiler that outputs the number of times each method is called within a specific program.
+* add a `-r` flag or a `require 'profile'` at the beginning of the file to jump start the profiler

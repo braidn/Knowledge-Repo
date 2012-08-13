@@ -1,0 +1,1 @@
+Filters are used to modify a request either, or both before or after a route has been executed. Accomplished with `before do` and `after do` blocks.

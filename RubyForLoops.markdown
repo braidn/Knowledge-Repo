@@ -1,0 +1,1 @@
+These are almost never used since under the hood they call the .each method. Many of us just believe in using the method since that is what is ultimately being used (convention).

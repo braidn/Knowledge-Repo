@@ -1,0 +1,1 @@
+The classiest way to fake objects. Without doing anything specific with the objects.

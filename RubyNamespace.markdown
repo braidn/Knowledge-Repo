@@ -1,0 +1,1 @@
+Often times an interchangeable word with module. Encase a set of classes/methods in their own namespace so they don't clash with other includes/loads, etc.

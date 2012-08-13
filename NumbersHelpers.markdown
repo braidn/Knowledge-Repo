@@ -1,0 +1,1 @@
+* `number_to_currency(product.number)` formats a number into a sexy piece of monetary enjoyment. Makes 12.22 == $12.22

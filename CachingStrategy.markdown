@@ -1,0 +1,1 @@
+unlike sessions, caches can contain a lot of information and might be considered a bad choice for throwing into a database

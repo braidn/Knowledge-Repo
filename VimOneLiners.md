@@ -1,0 +1,1 @@
+`ls | ack something | vim -` : Takes found output and throws it into a new vim buffer. You can type `gF` on any line and the file will open in another vim buffer.
