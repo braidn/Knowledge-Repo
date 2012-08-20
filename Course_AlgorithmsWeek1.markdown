@@ -26,4 +26,30 @@
 * _Fails_ when trees get too large and the search for a "root" takes way
   too long.
 
+###Improved Quick union (Weighted)
+
+* Weighted QU is where you would keep track of the size of each tree and
+  __always__ root from smaller tree -> larger tree.
+* Basically, the smaller tree will always be attached to the larger
+  tree, regardless of the way the union command is specified.
+* Ensures that no 1 item is too far from the root of the tree.
+* _Find_ is identical to the original QU
+* Base of any node is [lg][2](base 2) N (objects in list)
+* _Union_ time is constant given roots
+
+###Path Compression
+
+* Find distance from X to root. Then set every node touched on the path
+  to the direct decendent of root.
+* [Example][1] (Slide 28)
+* Simple, usually defined with one line of code.
+* The time taken is nearly linear; however, theory claims there are no union/find
+  linear algorithms.
+
+###Union-Find Application Use
+
+[Percolation][3]
+
 [1]: http://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf
+[2]: https://en.wikipedia.org/wiki/Logarithm
+[3]: https://en.wikipedia.org/wiki/Percolation_theory
