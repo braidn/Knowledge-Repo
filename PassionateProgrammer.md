@@ -4,6 +4,7 @@
 1. Always be on the look-out to be solution centric over technology centric. This is sometimes super hard.
 1. Focusing on the present makes you more happy with the little
    successess in life
+1. Saying yes is a addictive and destructive habbit
 
 ###Take-Aways
 
