@@ -5,6 +5,7 @@
 1. Focusing on the present makes you more happy with the little
    successess in life
 1. Saying yes is a addictive and destructive habbit
+1. Writing skills are essential when playing with a distributed team
 
 ###Take-Aways
 
@@ -19,3 +20,7 @@
    always worked, you’re less likely to recognize a new way that might
    work bet- ter. You become arrogant, and with arrogance you develop
    blind spots
+1. "Of course, if you’re out to change the world, you’re bound to make
+   some people angry"
+1. Always make sure no one is a asking the question: "What does Braden
+   do?"
