@@ -1,6 +1,8 @@
 ###CLI
 
 * `sudo -u postgres createdb my_site`: create a db
+* `sudo su postgres -c psql`: log into postgres command line with
+  postgres user
 
 ###PSQL Prompt
 
@@ -12,3 +14,5 @@
   permissions to db 
 * `DROP DATABASE db_name;`: Delete a database
 * `\timing`: toggle timing for queries
+* `alter user username with password ‘new password’;`: change password
+* `\c databasename`: connect to a specific database
