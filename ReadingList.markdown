@@ -2,12 +2,12 @@
 
 1. Rails View
 1. Rails Recipies
-1. Javascript Web Applications
 1. Secrets of the Javascript Ninja
 
 
 ###Reading
 
+1. Javascript Web Applications
 1. Design Patterns in Ruby
 1. Passionate Programmer
 
