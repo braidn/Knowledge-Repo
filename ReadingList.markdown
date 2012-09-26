@@ -8,6 +8,7 @@
 ###Reading
 
 1. Javascript Web Applications
+1. Rspec Book
 1. Design Patterns in Ruby
 1. Passionate Programmer
 
