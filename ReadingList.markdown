@@ -10,11 +10,11 @@
 1. Javascript Web Applications
 1. Rspec Book
 1. Design Patterns in Ruby
-1. Passionate Programmer
 
 ###Fin
 
 1. Cucumber Book
+1. Passionate Programmer
 1. Modern Javascript
 1. Well Grounded Rubyist
 1. Pickaxe 1.9
