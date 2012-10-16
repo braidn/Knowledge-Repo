@@ -1,6 +1,7 @@
 ###To Read
 
 1. Rails View
+1. Seven DB in Seven Weeks
 1. Rails Recipies
 1. Secrets of the Javascript Ninja
 
@@ -14,6 +15,7 @@
 ###Fin
 
 1. Cucumber Book
+1. Learning jQuery
 1. Passionate Programmer
 1. Modern Javascript
 1. Well Grounded Rubyist
