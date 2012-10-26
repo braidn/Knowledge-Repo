@@ -20,5 +20,9 @@
 * Objects make decisions on formating at runtime not a process of
 inheritance.
   * `some_var = Class.new(SomeStrategy)` vs `class Something < Base:Class`
+* Use a chunck of code wrapped in an object (why Ruby is [great for
+this][2])
+* Code blocks (procs) release the need of building special subclasses.
 
 [1]: https://en.wikipedia.org/wiki/Just-in-time_compilation
+[2]: /RubyProcs
