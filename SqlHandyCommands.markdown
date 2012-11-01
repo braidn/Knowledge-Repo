@@ -1,4 +1,4 @@
-###Notes
+##Notes
 
 * `show databases`: to get a list of all databases
 * `use database`: connect to a database for querying
@@ -12,6 +12,8 @@ using an id that doesn't appear in the referenced table.
 * `drop table tablename`: kisses it all goodbye
 * `mysql -u root -p dbname < *.sql_file`: importing a .sql file
 * Views are often known as virtual tables
+* [Filtering][6]
+* [Joins][7]
 
 ###Inserting Things
 
@@ -28,7 +30,8 @@ be thrown
 
 * [Example][2]
 * `order by` option specifies the order of the returned values
-* Query Clauses: `select`, `from`, `where`, `having`, `group by`, `order by`
+* Query Clauses: `select`, `from`, `where`, `having`, `[group by][4]`,
+`[order by][5]`
 * Column aliases can be added to select statements after each column
 name. A space is needed but no quotes
   * The `as` keyword can also be used to create aliased columns
@@ -48,6 +51,23 @@ greater than symbols to update banks of records
 * `delete from tablename where id = #`: Simple and svelte way to remove
 records
 
+###Null
+
+* Like most languages, null is simply the absent of a value in a field
+* Two nulls are never equal to one another
+* Something can be null, but it can never _equal_ null
+  * this means this: `where id is null` works
+  * and this: `where id = null` doesn't work
+* Sometimes you want to search for null because the results match your
+structured query
+  * example would be who doesn't work for X: Well technically if you
+  just searched who's employee id isn't X your results would be off if
+  there are any null's in this column
+
 [1]: /SqlInsert_Example
 [2]: /SqlSelect_Example
 [3]: /SqlDataUpdate_Example
+[4]: /SqlGroupBy
+[5]: /SqlOrderBy
+[6]: /SqlFiltering
+[7]: /SqlJoins
