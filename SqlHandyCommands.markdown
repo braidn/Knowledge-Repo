@@ -50,6 +50,10 @@ greater than symbols to update banks of records
 
 * `delete from tablename where id = #`: Simple and svelte way to remove
 records
+* if removing a column:
+  * `alter table table_name drop column column_name`
+  * or `modify table table_name drop(column1, column2, column3)`
+* Guarenteed POOF!
 
 ###Null
 
