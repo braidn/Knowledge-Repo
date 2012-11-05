@@ -1,4 +1,4 @@
-###Notes
+##Notes
 based on two key objectives:
 
 1. capturing all the things that need to get done—now, later, someday, big, little, or in between—into a logical and trusted sys-tem outside of your head and off your mind
@@ -6,6 +6,10 @@ based on two key objectives:
 
 * Key to managing all the "stuff in life" is managing our actions.
 * Real problems creep in when the project is without scope or what the next step is.
+* When doing knowledge work it is key to define and redefine what
+success looks like
+* When you have an idea you "grab it" which leads to efficiency since
+you don't have to re-create it again.
 
 ###Core Process
 
@@ -23,3 +27,21 @@ We go through 5 discrete stages as we deal with each piece of our work
    head.
 1. You must have as few collections buckets as you can get by with
 1. You must empty them regularly
+
+###Five Phases of Natural Planning
+
+1. Purpose: The why of the project/meeting/thing/item
+  1. It defines success, one can't feel good without knowing the purpose
+     of things
+1. Clarifying Outcomes: one can't see how to do something unless they
+   envision themselves actually doing it.
+1. Brainstorming: mind mapping ideas. 
+  1. Getting ideas onto paper in any form frees up the flow for more
+     ideas that you weren't previously aware of.
+  1. This idea is known as "distributed congnition"
+  1. Avoid analysis and organization during this process
+1. Organizing: pretty self explanitory
+1. Next Action: Doing
+  1. Sufficient planning is reached when every next-action percievable
+     is layed out
+  1. Clarification of the next action will allow one to stay in control
