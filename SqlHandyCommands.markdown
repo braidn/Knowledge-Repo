@@ -14,6 +14,7 @@ using an id that doesn't appear in the referenced table.
 * Views are often known as virtual tables
 * [Filtering][6]
 * [Joins][7]
+* [Sets][8]
 
 ###Inserting Things
 
@@ -75,3 +76,4 @@ structured query
 [5]: /SqlOrderBy
 [6]: /SqlFiltering
 [7]: /SqlJoins
+[8]: /SqlSets

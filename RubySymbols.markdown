@@ -6,4 +6,5 @@
 * make ideal hash keys
 * the method `to_sym` will change any traditional string into a symbol
 * if you attempt to yank info from a hash that uses symbols with this code: `#{person['name']` you will get an error.
-  * Rails is smart and has a {{HashWithIndifferentAccess}} class that mitigates this issue
+  * Rails is smart and has a HashWithIndifferentAccess class that mitigates this issue
+  * `{:a => 1 }.with_indifferent_access["a"] # => 1`
