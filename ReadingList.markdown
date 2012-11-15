@@ -8,11 +8,12 @@
 ###Reading
 
 1. Professional Node.js
-1. Secrets of the Javascript Ninja
+1. Professional JS for Web Devs 3rdE
 1. Javascript Web Applications
 1. Rspec Book
 1. Design Patterns in Ruby
 1. Design Of Everyday Things
+1. The Hobbit
 
 ###Fin
 
