@@ -1,5 +1,9 @@
-* How to create: JsCreatingObjects  
-* JsObjectProperties
+##Notes
+
+* [Creating Objects][1] 
+* [Object properties][2]
+* Object type is the base from which all other objects derive from and
+therefore inheret properties from
 
 ###Type Checking
 
@@ -41,3 +45,6 @@ Math object is used to build mathematical operations
 * `.pow( )` returns the power of the number in parens
 * `.round( )` rounded to the nearest integer
 * `.random( )` returns a pseudo random number between 0 and 1
+
+[1]: /JsCreatingObjects  
+[2]: /JsObjectProperties

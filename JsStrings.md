@@ -1,5 +1,8 @@
+##Notes
+
 * Javascript strings can be chained together with the + method.
   * `'my name is roy ' + ' and john' === 'my name is roy and john'`
+* Unlike most languages, single and double quotes make no differance
 
 ###Handy Functions
 
