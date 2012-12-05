@@ -12,6 +12,8 @@ using an id that doesn't appear in the referenced table.
 * `drop table tablename`: kisses it all goodbye
 * `mysql -u root -p dbname < *.sql_file`: importing a .sql file
 * Views are often known as virtual tables
+* When requiring all from a table use `select q.*` -> everything will be
+selected from the q aliased table.
 * [Filtering][6]
 * [Joins][7]
 * [Sets][8]
