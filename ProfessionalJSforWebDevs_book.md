@@ -22,7 +22,7 @@ of something
 * [Number Types][2]
 * [String Types][3]
 * [Object Types][4]
-
+ 
 [1]: /JsBoolean
 [2]: /JsNumbers
 [3]: /JsSrings
