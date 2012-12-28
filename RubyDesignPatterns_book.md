@@ -24,5 +24,17 @@ inheritance.
 this][2])
 * Code blocks (procs) release the need of building special subclasses.
 
+###Observer Pattern
+
+* Observers subscribe to a class and fire information as the class changes
+* Ruby standard lib comes with a completely usable [Observable module][3]
+* Observable does not allow the passing of code blocks
+* If you write your own methods then you can pass whatever in as a block
+	* This creates a proc, looks like a `do/end` block directly after a method call
+* Great care needs to be heeded. At its core a method is firing a method on another 
+object and that is never 100% fool-proof
+* A good example of this is the `before` and `after` calls in ActiveRecord
+
 [1]: https://en.wikipedia.org/wiki/Just-in-time_compilation
 [2]: /RubyProcs
+[3]: http://apidock.com/ruby/Observable
