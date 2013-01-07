@@ -18,6 +18,8 @@ Ruby modules act super cool. They wrap themselves as an anonymous class and inje
 * To include in a class simply call: `include ModuleName` at the beginning of the class definition and BOOM, success
   * all of the module's methods automagically become available to the class that the module was included in
 * To include modules as singletons, or class level methods, instead of calling `include`, call `extend ModuleName`
+	* Modules can be extended to specific objects. This allows them to be object level classes on that one object
+		* This can be confusing but it is not used a whole lot
 * Mixin modules are clever namespaces to include constants
 
 [1]: /RubySelf

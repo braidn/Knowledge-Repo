@@ -7,3 +7,7 @@
   * this is done by calling `events: {}`
   * and passing in `"<event> <selector>: <function>"`
   * below the events attribute we define the function `<functionName> : function(){do something;}`
+	
+###Collections
+
+* Will extend from the all ready defined view (instead of backbone)

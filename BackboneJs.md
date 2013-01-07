@@ -10,6 +10,8 @@
   1. Save, said cool shit
 * [Views][1]
 * [Models][2]
+* [Collections][3]
 
 [1]: BackboneJs_views
 [2]: BackboneJs_models
+[3]: BackboneJs_collections

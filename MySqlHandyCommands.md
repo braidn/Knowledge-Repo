@@ -1,5 +1,12 @@
 ###Notes
 
+* Foreign keys are easily created and managed by:
+	* `foreign key (columnName) references tableName (tableName_id that it references)`
+	* this can be performed as `alter table` or after defining the column when creating the table
+	* this adds a few constraints where ids can not be added if they don't exist
+* When using transactions, it only works with tables created using `engine=InnoDB`
+* `count()` function is grouped in a special class called: _aggregate-functions_
+
 ###User Management
 
 * `create user`, `grant`, `revoke user`, `rename`, `set password`, `dropuser`, `flush`, `show grants`, `show privileges`
