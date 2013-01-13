@@ -52,9 +52,9 @@
 * When creating custom routes or `member routes` follow:
 	* the syntax to do it in routes.rb is: `get :methodName, on: :member`
 	* sorta cryptic but it produces `methodName_modelName`, the url, and sets the action and controller
-	* a `:member` route will return a single resource
-	* and a `:collection` route will return a collection of resources
-	* each route needs to be described in this way
+	* a `:member` route will return a single resource (bills/id/customRoute)
+	* and a `:collection` route will return a collection of resources (bills/customRoute)
+	* each custom route needs to be described in this way
 
 ###Forms
 
@@ -101,6 +101,7 @@
 	* the html part will live in the html file and how the AJAX will work lives in the Js file
 	* Much of what will be in the js.erb file will be `.show()`, `.hide()` stuff
 	* Since these files are .erb based there can be plenty of ruby as well.
+	* jQuery can be used and usually is quite liberally within the js.erb files
 
 ###Helpers
 
@@ -135,10 +136,12 @@
 
 * Make sure to send the correct HTTP status codes when needed.
 	* This would be done by calling `status: :some_status`
-* When needed, make sure to use the `location:` option as well
+* When responding with a resource, make sure to use the `location:` option as well
 * When responding to json:
-	* call the instance object: `@someInstance` and the `to_json(only: :item)`
+	* call the instance object within render: `render json: @someInstance`
+	* if you only want to return some of the json attributes: `to_json(only: :item)`
 	* so if you wanted to see the cost of your bill: `@bill.to_json(only: :cost)`
 	* if you want more, pass an array of items to the `only:`
 	* if you want to omit everything except use the `except:` instead of `only:`
+	* if you want to omit many fields, just pass an array after `except:` or `only:`
 	* if you have a relationship, call `include: :modelRelationShipName, only: :awesome`
