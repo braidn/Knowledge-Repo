@@ -10,6 +10,9 @@
 
 * Use _scopes_ to define chainable sql clauses (what it sounds like)
 	* syntax: `scope :scopeName, where('Something')`
+	* lambdas used to pass params into the scope
+		* scope :top, lambda { |l| limit(l) } would be called with stuff.top(2)
+	* Scopes can be called as single method declarations for readability sake
 * _Callbacks_ are basically `before_action` and `after_action` calls to methods
 * The idea: before saving this model fire this method: easy
 	* __IF__ these methods return false, the save stops
