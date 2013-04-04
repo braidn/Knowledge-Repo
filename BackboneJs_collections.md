@@ -10,6 +10,10 @@
 * Events that collections fire: `add`, `remove`, `reset`
 * [Collections View][4]
 
+###Extending Collections
+
+* If extended, you get everything from the original but allow a parent/child subclass idea
+
 [1]: ActiveRecord
 [2]: BackboneJs_models
 [3]: http://underscorejs.org/#collections
