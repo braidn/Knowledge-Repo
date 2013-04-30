@@ -6,5 +6,8 @@
 * [Jade][1] is the default template engine for Express
 * `npm install library --save` will add lib to the current dir and add lib to package.json
 	* if anything is wrong with package.json the error will fail silently and nothing will be written
+* Like Rails, express utelizes a session flash to persist info on next request
+* Response handles redirection and rendering
+* The Request deals with sessions mostly
 
 [1]: http://jade-lang.com/

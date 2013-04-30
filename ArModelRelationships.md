@@ -9,5 +9,5 @@
   * these can be auto added by using `table:references` with the generators
 * `has_and_belongs_to_many`
   * considered a many-to-many relationship
-  * used in both models (no need to use has_one or has_many
+  * used in both models (no need to use has_one or has_many)
   * active record creates a join table (named after both table names connected with a _ in alphabetical order)

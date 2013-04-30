@@ -1,4 +1,4 @@
-Explain to rails what is going on at the DB level.
+##General
 
 * `dependent => :destroy` forces the association to rely delete it's connection if itself is deleted.
   * this is a little slow if there are a lot of items to destroy
@@ -6,6 +6,14 @@ Explain to rails what is going on at the DB level.
   * if per chance you just wanted to zero out the related id field pass `dependent => :nullify`
 * [RailsBelongsTo]
 * Otherwise known as [ActiveRecord]
+* Look to add a new model ONLY if a human interface is there to modify data
+	* If not, rely on booleans and denormalization
+	* Denormalization is where you pull things into models and define dynamic helper methods
+* When using boolean columns it is best practices to name them as questions with the same prefix
+	* example might be `heard_through_x` and `heard_through_y`  
+	* the `:serialize` method works here however becomes inefficient while using
+		the find method
+
 
 [RailsBelongsTo]: /RailsBelongsTo
 [ActiveRecord]: /ActiveRecord
