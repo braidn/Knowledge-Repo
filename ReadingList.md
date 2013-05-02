@@ -5,12 +5,16 @@
 1. Rails Recipies
 1. Rails View
 
+### On Hold
+
+1. Building Node Applications
+1. Design Patterns in Ruby
+
 ###Reading
 
 1. Sql And Relational Theory
-1. Design Patterns in Ruby
+1. Professional Node.js
 1. Rails AntiPatterns
-1. Building Node Applications
 1. Design Of Everyday Things
 
 ###Fin
