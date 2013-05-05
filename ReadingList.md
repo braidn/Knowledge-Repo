@@ -4,6 +4,7 @@
 1. Seven DB in Seven Weeks
 1. Rails Recipies
 1. Rails View
+1. Practical OO Design in Ruby
 
 ### On Hold
 
