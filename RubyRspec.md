@@ -14,6 +14,7 @@ for instance methods.
   * If they need to be split them using a context block
 * One assertion per test
 * When describing tests use the third person in the present tense.
+* Many people use double quotes in `it` statements although there is no magic needed
 
 [1]: http://www.rspec.info/
 [2]: http://rubyspec.org/
