@@ -1,3 +1,5 @@
+##Notes
+
 * `has_one`
   * one-to-one relationship
 * `has_many`
@@ -11,3 +13,7 @@
   * considered a many-to-many relationship
   * used in both models (no need to use has_one or has_many)
   * active record creates a join table (named after both table names connected with a _ in alphabetical order)
+
+###Relations
+
+* collection calls will never retunr `nil`, instead it hands back an empty collection...aka an empty array

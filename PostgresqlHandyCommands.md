@@ -8,6 +8,8 @@
 
 * `\? or \h COMMAND`: Get help
 * `\l`: list all databases
+* `\d`: list all tables
+* `\d+tableName`: describe the table
 * `CREATE USER my_user WITH PASSWORD 'password';`: Create a user with a
   specified password
 * `GRANT ALL PRIVILEGES ON DATABASE my_site TO my_user;`: Give

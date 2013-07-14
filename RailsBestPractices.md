@@ -15,6 +15,9 @@
 	`accepts_nested_attributes_for :modelName`
 	* as an added bonus validation (if any) will occur on both models
 	* in the controller: `@item1 = Item1.new(:item2 => Item2.new)`
+* ownership actions (`current_user_id`) should be assigned in the controller
+	* instead of being fired in a hidden field in a form
+	* this is for security reasons: users can't assign forms to other users
 
 ###Presenters
 
@@ -24,6 +27,7 @@
 * The presenter _1st_ gets called into an instance variable in the controller
 	* then the instance var is called in the view with the correct presenter method
 	* presenters are heavy users of ActiveSupport::Memoizable due to their heavy caching
+* [More][1]
 
 ###Models
 
@@ -33,3 +37,5 @@
 	every time the method is fired
 * When dealing with SQL, always use the `?` syntax to escape user input
  * passing hashes or symbols that relate to hashes is as safe as the `?` op
+
+[1]: /RailsPresenters
