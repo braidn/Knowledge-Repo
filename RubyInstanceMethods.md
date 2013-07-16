@@ -15,6 +15,7 @@ Kinda confusing? Yeah definitely but just remember if there is a need to call
 
 ###Ancestor Chain
 
+* Easily found by using the class method `.ancestors`
 * Basically how a ruby object looks up a method call
 * If a class includes a module:
 	* It creates an an anonymous class, wraps the module and inserts it
