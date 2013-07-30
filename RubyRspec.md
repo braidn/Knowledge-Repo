@@ -6,6 +6,17 @@
   * `object_name.stub!(:methodName)`
 * a good way to learn how to properly implement rspec is reading [Rubyspec.org][2]
 
+###Syntax
+
+* `let(:method){}` used instead of before each if only creating instance variables for it blocks
+* `describe()` is used to define an example group
+	* `context()` is an alias of describe
+	* it is used to define contexts rather than describe which describes things
+* `it()` is used to define a single code example
+	* each `it` block will likely be with a describe block
+* three different kinds of hooks are provided:
+	* `before(:each)`, `before(:all)`, `after(:each)`, `after(:all)`, `around(:each)`
+
 ###Best Practices
 
 * Keep clear the methods you are describing using `.` for class and `#`

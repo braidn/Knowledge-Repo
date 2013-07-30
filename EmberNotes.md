@@ -16,6 +16,11 @@
 
 * ApplicationRoute is the special route for the ember app itself
 
+###Models
+
+* Models can extend from DS.model when using ember data
+* If you don't need anything to persist it is best to extend `Object`
+
 ###Templates
 
 * When dealing with attributes use `{{ bindattr attrName = 'modelItem' }}`

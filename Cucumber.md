@@ -1,3 +1,4 @@
+##Notes
 Way to build a scenario in human readable language when using [outside in development][5]. Best served with large [Capybara Dsl][1] like rodents
 
 * To install a skeleton in a rails project: `rails g cucumber:install`
@@ -12,6 +13,13 @@ Way to build a scenario in human readable language when using [outside in develo
 * step definitions execute in the context of World just like methods of the World object
 * Before any steps are run, Cucumber loads all files from features/support
 * if an env.rb file exists in this dir it will be the VERY first file to be loaded
+
+###Theory
+
+* A user story must have all of the following characteristics
+	* have business value
+	* be testable
+	* be small and implementable in one iteration
 
 ###Objects
 

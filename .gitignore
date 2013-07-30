@@ -2,3 +2,5 @@
 .SyncID
 .SyncIgnore
 .AppleDouble/*
+.SyncArchive/
+.SyncArchive/*

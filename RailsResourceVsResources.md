@@ -1,3 +1,5 @@
+##Notes
+
 * `resource` calls produce singular paths instead of plural for `resources`
   * article_path vs articles_path
   * article_path will take the user to the resource (think find by id or show)
