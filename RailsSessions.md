@@ -13,5 +13,9 @@
   * This leads to most cookies containing the "cart_id" for example over everything actually in the cart
 * ALL volatile data should be kept in the database
 
+###Best Practices
+
+* Storing info in sessions/on the client side are good for 2/3 step flows
+
 [1]: /RailsFlash
 [2]: /RailsResourceVsResources

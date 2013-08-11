@@ -7,6 +7,7 @@ modules contain a number of methods that let you reference resources external to
   * could also be written as `link_to 'Name', {:controller => 'articles', :action => 'new'}, {:class => 'awesome_sauce'}`
 	* these will always default to the HTTP GET request
 	* although the `:method` modifier can change this to whatever
+	* using `link_to :back` hooks into some jQuery gold and pushes you back one page
 * `button_to` acts identical to `link_to` but, defaults to POST
 
 ###Nesting
