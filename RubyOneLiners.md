@@ -13,3 +13,9 @@ common
   * Anything that passes is true will be passed back out into an array
 * Squashing repetitive values from an array
   * Ruby makes this easy with the `.uniq` method for every Array
+* Build a random name or string:
+	* `('a'..'z').to_a.sample(5).join`
+* Assign two variables together using map
+	* `var1, var2 = 2.times.map { something }`
+	* times would need to be set to how many vars needed being set
+

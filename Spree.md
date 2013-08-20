@@ -1,0 +1,26 @@
+## Notes
+
+* `store_menu?` used to check if we are in the admin menu
+* guest checkout can be set to false in the spree initializers file
+	* this and many other settings can be set here (backorders, etc)
+	* even things like how many items are shown per page (pagination)
+
+### Routes
+
+* All routes are namespaced with `spree.routeName`
+* Uses devise routing names
+
+### Users
+
+* `current_user` works as a check system
+* `spree_current_user` is more specific to the Spree system
+
+### Models
+
+* Overiding a specific Spree model:
+	* `Spree::ModelName.class_eval` block
+
+### Orders
+
+* leans heavily on the state_machine gem
+* `checkout_progress` helper method for figuring out where in it the user is

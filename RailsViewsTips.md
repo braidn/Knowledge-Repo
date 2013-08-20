@@ -5,6 +5,8 @@
   * [API][1]
 * `form_for` and `text_field` etc are used to interact with ActiveRecord
   * [API][2]
+* Conditional logic can be built using controller name
+	* _ex_: `if controller.controller_name == 'something'`
 
 ###Collections
 
@@ -20,6 +22,11 @@
 * This technique can be used in class/id names or really anywhere
 * Defaults in this category are a little weird: `yield(:name) || 'SomethingElse'`
 * A logical if can be used as well: `if content_for?(:name)`
+
+###CSS
+
+* If you wrap classes in a array you can write:
+	* `<< ('otherClass' if something == something)` to make things a little dryer
 
 ###Pitfalls
 
