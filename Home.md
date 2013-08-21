@@ -1,0 +1,1 @@
+BOOM, a wiki
