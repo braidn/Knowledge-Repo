@@ -1,1 +1,1 @@
-BOOM, a wiki
+A wiki
