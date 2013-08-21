@@ -1,1 +1,1 @@
-A personal wiki
+A Personal wiki
