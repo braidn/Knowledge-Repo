@@ -1,3 +1,5 @@
+##Notes
+
 	* `after: :email` place it after another column
 	* `limit: 30` limit the size
 	* `unique: false` unique not needed
@@ -5,6 +7,8 @@
 	* Once run you should dive in there and create a down method for rollback sanity
 * Foreign keys are easily created by adding a `add_index :currentModel, foreignKeyModel_id`
 	* On the foreignKeyModel it needs to be singular
+* Often times a good idea to use bang methods because they don't return whiney nils
+	* Example would be dynamic finders (although they are depricated in R4)
 
 ###Models
 

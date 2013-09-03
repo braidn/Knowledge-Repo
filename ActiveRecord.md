@@ -1,3 +1,5 @@
+### Notes
+
 * A migration name "Order" would be considered a subclass of ActiveRecord::Base but the table name would read as: "orders"
   * Clear diff in the uppercase name vs lowercase/plural
   * if a plural needs to be correctly defined then the following code gets placed in /initilizers/inflection.rb
