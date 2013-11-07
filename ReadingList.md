@@ -21,6 +21,7 @@
 
 ###Fin
 
+1. Confident Ruby
 1. Jump Start Sinatra
 1. The Hobbit
 1. Unix in a Nutshell
