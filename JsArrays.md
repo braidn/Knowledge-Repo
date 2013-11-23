@@ -1,3 +1,5 @@
+##Notes
+
 ###Methods
 
 * access to both `.pop` and `.push` methods just like ruby.
