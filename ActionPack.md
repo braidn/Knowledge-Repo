@@ -1,4 +1,5 @@
 At it's essence Action Pack is the Controller and the View.
+Below are some more detailed parts and sections
 
 * [Action Controller][1]
 * [Action View][2]
