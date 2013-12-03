@@ -5,7 +5,6 @@
 1. Rails Recipies
 1. Rails View
 1. Exploring Everyday Things with R and Ruby
-1. Practical OO Design in Ruby
 
 ### On Hold
 
@@ -15,12 +14,14 @@
 ###Reading
 
 1. Sql And Relational Theory
+1. Practical OO Design in Ruby
 1. Professional Node.js
 1. Rails AntiPatterns
 1. Design Of Everyday Things
 
 ###Fin
 
+1. Practical Vim
 1. Confident Ruby
 1. Jump Start Sinatra
 1. The Hobbit
