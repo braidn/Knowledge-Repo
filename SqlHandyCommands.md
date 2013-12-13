@@ -40,6 +40,8 @@ name. A space is needed but no quotes
   * The `as` keyword can also be used to create aliased columns
 * By using the `distinct` keyword like `select distinct` you remove any
 duplicate data.
+* `between` used to find items between two dates
+  * ex: `select * between 1/1/1111 and 1/1/1112`
 
 ###Altering The State of Affairs 
 
