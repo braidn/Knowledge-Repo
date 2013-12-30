@@ -12,3 +12,5 @@ A testing suite much like Rspec, focuses on Goal, Role, Feature.
 * Make sure to spell things absolutely correctly all the time
 * Also keep names down to a minimum throughout your features file.
 * The key word `within` is used before specifying some css to look for. More of this in the DSL
+* Unlike Webrat, you have no access directly to the request/response
+  * these are found by: `page.driver.request.env['SOMTHING']`
