@@ -1,6 +1,7 @@
 ##Notes
 
 * To exclude a link add `data-no-turbolinks: true` to any link_to or button helper
+  * adding this to body of a layout file will turn off turbolinks completely
 * Animations are totally doable although are not on by default
 	* [this SO article][1] goes fairly deeply down this rabbit whole
 
