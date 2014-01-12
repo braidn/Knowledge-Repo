@@ -19,3 +19,4 @@
 * `alter user username with password ‘new password’;`: change password
 * `\c databasename`: connect to a specific database
 * `SELECT * from table`: return all rows, must first be connected
+* `DELETE FROM tableName;`: wipe a table clean
