@@ -6,10 +6,10 @@ Basically how Rails knows how to form a database. Can be generated in two differ
    * Builds model, migration file, and tests
    * Pass `--skip-migration` to bypass the migration and just create the model
 3. Rails also knows and implements a clever way to deal with RailsSessions
-4. RailsRunningMigrations
+4. [[RailsRunningMigrations]]
 5. [[RailsMigrationAnatomy]]
-6. RailsManagingTables
-7. RailsAdvancedMigrations
+6. [[RailsManagingTables]]
+7. [[RailsAdvancedMigrations]]
 
 ###Best Practices
 
