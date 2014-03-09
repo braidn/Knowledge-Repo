@@ -9,7 +9,6 @@ Basically how Rails knows how to form a database. Can be generated in two differ
 4. [[RailsRunningMigrations]]
 5. [[RailsMigrationAnatomy]]
 6. [[RailsManagingTables]]
-7. [[RailsAdvancedMigrations]]
 
 ###Best Practices
 
