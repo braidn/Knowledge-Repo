@@ -6,6 +6,7 @@
   * aka create.js.erb
 	* these files house the response from the ajax request(replace html/move stuff)
 * in rails 3.1 every js.erb file is playing favorites with jQuery.
+* idea for rails [[without an MVC framework|RailsSansJs]]
 
 ###Request
 
