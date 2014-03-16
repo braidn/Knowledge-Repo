@@ -1,12 +1,13 @@
 ##Notes
 
-* uses a `render()` function to push an `el` tag (this can be changed with
+* uses a `render()` function to push an `el` tag 
+  * this can be changed with `tagName:` to the DOM
   * very common to just create a render function when creating the view
-`tagName:`) to the DOM
+  * ex: `$(this.el).html('<h1>I am big</h1>')`
 * templates are done with underscore library (default)
 * Views themselves are responsible for responding to user interaction
   * this is done by calling `events: {}`
-  * and passing in `"<event> <selector>: <function>"`
+  * and passing in `"<event> <selector>" : "<function>"`
   * below the events attribute we define the function `<functionName> : function(){do something;}`
 	
 ###Collections
