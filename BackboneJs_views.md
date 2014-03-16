@@ -1,6 +1,7 @@
 ##Notes
 
 * uses a `render()` function to push an `el` tag (this can be changed with
+  * very common to just create a render function when creating the view
 `tagName:`) to the DOM
 * templates are done with underscore library (default)
 * Views themselves are responsible for responding to user interaction
