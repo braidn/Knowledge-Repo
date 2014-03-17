@@ -2,7 +2,7 @@
 
 * download the sinatra gem, require 'sinatra' in the .rb file and to get it running locally use ruby fileName in terminal.
 * use a config.ru file for working with Thin
-  * you can pass '#\ -thin flags` at the top of the file to set items like the port
+  * you can pass `#\ -thin flags` at the top of the file to set items like the port
 
 ###General
 
