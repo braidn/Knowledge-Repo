@@ -11,6 +11,7 @@
 * [Views][1]
 * [Models][2]
 * [Collections][3]
+* [Backbone Antipatterns|Backbone_Antipatterns]
 
 [1]: BackboneJs_views
 [2]: BackboneJs_models
