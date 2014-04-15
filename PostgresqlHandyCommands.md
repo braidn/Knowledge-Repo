@@ -16,6 +16,7 @@
 * `GRANT ALL PRIVILEGES ON DATABASE my_site TO my_user;`: Give
   permissions to db 
 * `DROP DATABASE db_name;`: Delete a database
+* `CREATE DATABASE db_name;`: Creates a new database
 * `\timing`: toggle timing for queries
 * `alter user username with password ‘new password’;`: change password
 * `\c databasename`: connect to a specific database
