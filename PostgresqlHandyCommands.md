@@ -3,6 +3,7 @@
 * `sudo -u postgres createdb my_site`: create a db
 * `sudo su postgres -c psql`: log into postgres command line with
   postgres user
+* `dropdb db_name` also is a quick way to terminate a database
 * When connecting locally simply use: `psql -d name_of_db`
 
 ###PSQL Prompt
