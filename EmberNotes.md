@@ -7,10 +7,16 @@
 
 ###Controllers
 
-* Provides 3 diff controllers: Array, Object and "Controller"
-* All controllers are generated at start
-	* As long as the viewport is active, controllers stay instantiated
-* One page could have many controllers working at once
+* Provides 3 diff controllers: Array, Object and "Controller".
+* All controllers are generated at start.
+	* As long as the viewport is active, controllers stay instantiated.
+* One page could have many controllers working at once.
+* Controller properties available to templates + view.
+
+###Mixins
+
+* Used to de-dup logic from the controllers. Controllers pull in properties when instantiated.
+  * ex: `App.UserController = Ember.ObjectController.extend(App.Mixin, {})`
 
 ###Routes
 
@@ -44,4 +50,4 @@
 
 * Clickable items that don't modify the URL
 * Is written like: `{{ action "someFunctionName" someArg }}`
-* Functions get placed in the controller where the action is needed
+* Functions get placed in the controller where the action is needed, in a `action: {}` object
