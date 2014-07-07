@@ -1,3 +1,4 @@
+* `exit-program` terminates the current pry buffer (good for jumping out of big loops)
 * `!` to clear the buffer
 * `cd` into models
 * `nexting` command shows you where you are and `exit` bumps you up
