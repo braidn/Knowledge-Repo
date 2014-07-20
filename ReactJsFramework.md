@@ -29,4 +29,9 @@
 * Between updates, React diffs the deltas and updates only the required elements
   * pretty much sums up why it is so awesome.
 
+###External links
+
+1. [Docs][2]
+
 [1]: http://davidwalsh.name/event-delegate
+[2]: http://facebook.github.io/react/docs/getting-started.html
