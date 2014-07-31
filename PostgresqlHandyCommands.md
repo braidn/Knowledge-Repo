@@ -20,6 +20,7 @@
 * `CREATE DATABASE db_name;`: Creates a new database
 * `\timing`: toggle timing for queries
 * `alter user username with password ‘new password’;`: change password
+* `ALTER DATABASE myolddbname_here RENAME TO mynewdbname_here`: change db_name
 * `\c databasename`: connect to a specific database
 * `SELECT * from table`: return all rows, must first be connected
 * `DELETE FROM tableName;`: wipe a table clean
