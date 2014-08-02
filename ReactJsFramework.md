@@ -33,6 +33,14 @@
 * Between updates, React diffs the deltas and updates only the required elements
   * pretty much sums up why it is so awesome.
 
+###With Rails
+
+* So far it seems like everyone is using the react rails gem
+* Make sure to add declaration below turbolinks in `application.js`
+* Use `config.react.variant = :development` in development for unmagnified assets
+  * the alternative of this is :production which removes all the helpful warnings.
+* In .jsx files this is required at the beginning for compilation: `/** @jsx React.DOM */`
+
 ###External links
 
 1. [Docs][2]
