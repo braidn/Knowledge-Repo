@@ -2,6 +2,8 @@
 
 * `Component` is the building block behind React
 * The UI layer can be though of as a tree (think BTree) of components
+  * when building it is often times easier to start at the most inner and work out
+  * this will almost always mean using data stubs until you get to the outer most content.
 * Components have a `render()` function that creates an intermediate-DOM (HTML output)
   * this is a requirement for all components.
 * Calling `renderComponent()` on the root of the tree will recursively build its' entire DOM
