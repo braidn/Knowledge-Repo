@@ -12,6 +12,8 @@
   * these properties are immutable and only a higher level component is allowed to make changes
 * Second type of input is `state` which is mutable.
 * Data flows down the Component tree while events bubble up.
+* `ref` attributes are used for inputs
+  * used to assign a name to a child component and referenced with `this.refs.name`
 
 ###DOM Sync
 
@@ -19,12 +21,15 @@
   * this is just another way from `React.renderComponent()` to force a visual refresh
 * The DOM diff is done through a virtualDOM which is not a shadowDOM
   * shadowDOM's are browser specific, this is not.
+* Use `getDOMNode()` on a component to grab it's native DOM element. (handy in getting input data)
 
 ###Synthetic Events
 
 * Events that are exposed at the intermediate DOM level.
 * React uses [event-delegation][1] therefore only attaching events to the root-level.
-* Used to standardise UIs across browsers/devices
+* Used to standardise UIs across browsers/devices.
+* All event handlers are written with a camelCase convention: `onSubmit`.
+* Always return `false` from an event handler to prevent browser's default actions.
 
 ###State Machine
 
