@@ -2,17 +2,21 @@
 
 * `Component` is the building block behind React
 * The UI layer can be though of as a tree (think BTree) of components
-* Components have a `render()` function that creates an intermediate-DOM
+* Components have a `render()` function that creates an intermediate-DOM (HTML output)
+  * this is a requirement for all components.
 * Calling `renderComponent()` on the root of the tree will recursively build its' entire DOM
 * Components are created by creating a: `React.createClass` object
-* `this.props.name` is used to read the name property passed into the creation of the class.
+* `this.props.name` is used to read the name property passed into the creation of the class (_input_).
   * these properties are immutable and only a higher level component is allowed to make changes
+* Second type of input is `state` which is mutable.
 * Data flows down the Component tree while events bubble up.
 
 ###DOM Sync
 
 * Whenever a call to `setState()` is made React triggers the `render()` method to keep in sync
   * this is just another way from `React.renderComponent()` to force a visual refresh
+* The DOM diff is done through a virtualDOM which is not a shadowDOM
+  * shadowDOM's are browser specific, this is not.
 
 ###Synthetic Events
 
