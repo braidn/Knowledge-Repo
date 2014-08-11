@@ -11,5 +11,6 @@ in addition you can add local variables to the partial by passing a `:locals => 
 * `:partial` adheres to every entry where `:collection => " {{collectionName}} "` to each member of a collection or list of items
 * incredibly valuable when iterating over a list of items
 * `:spacer_template => "templateName"` is a kind of shim that gets placed between each item in an object. So if you wanted a space between each item you might have `<br />` in the _spacer template
+* `local_assigns` is a key hash of assign variables to the partial.
 
 Rails can detect a / in the name of a `:partial` call and will figure it to be a call to a dir in app/views. This means you could hold all of your header / footer stuff in a folder called shared/ and call `:partial => "shared/Name"` when needed across views
