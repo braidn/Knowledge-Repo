@@ -7,19 +7,20 @@
 1. Professional Node.js
 1. Exploring Everyday Things with R and Ruby
 
-### On Hold
+### Stuck
 
 1. Building Node Applications
 1. Design Patterns in Ruby
+1. Design Of Everyday Things
 
 ###Reading
 
 1. Sql And Relational Theory
-1. Rails AntiPatterns
-1. Design Of Everyday Things
 
 ###Fin
 
+1. Shape of Design
+1. Rails AntiPatterns
 1. Practical OO Design in Ruby
 1. Practical Vim
 1. Confident Ruby
