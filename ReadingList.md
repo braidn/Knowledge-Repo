@@ -16,10 +16,13 @@
 ###Reading
 
 1. Sql And Relational Theory
+1. Thinking Fast And Slow
 
 ###Fin
 
 1. Shape of Design
+1. The Obstacle is The Way
+1. Daily Rituals
 1. Rails AntiPatterns
 1. Practical OO Design in Ruby
 1. Practical Vim
