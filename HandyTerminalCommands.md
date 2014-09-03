@@ -1,0 +1,1 @@
+* `echo 'flush_all' | nc localhost 11211` used to flush memcache server. This presupposed that your server is the local machine and listening on 11211
