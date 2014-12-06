@@ -6,6 +6,7 @@ newly initiated model
 * use `get` and `set` methods so proper watchers will be fired
 * A model will often have a bunch of methods
 * models are often built prior to a interface so they can be tricky
+* Allows the developer to shore up none objects that react like a backbone model.
 
 ###Methods
 
