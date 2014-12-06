@@ -14,7 +14,8 @@ lifecycle are heavily tested. Make sure not to test these methods due to simple 
 ###Tooling
 
 * [Mocha][1]: Library that allows you to write describe/it style testing blocks.
-* [Sinon][1]: Mocking/Stubbing/Spy library.
+* [Sinon][2]: Mocking/Stubbing/Spy library.
 * [Chai][1]: Assertion library that allows you to actually test objects.
 
-[1]: '/FrontendTesting'
+[1]: '/MochaJs'
+[2]: '/SinonJs'
