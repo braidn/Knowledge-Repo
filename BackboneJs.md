@@ -1,3 +1,9 @@
+##Reasons to use Philosophy.
+
+* Avoids tying the application to the state of the dom.
+* Adds the idea of file organization, although this is very open.
+* Makes life testable.
+
 ##Notes
 
 * Basics are fairly simple:
