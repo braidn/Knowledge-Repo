@@ -12,6 +12,7 @@
 * Views can be created to encapsulate existing elements on the page.
   * this is interesting because you can capture events not defined elsewhere.
   * creates a scoped jquery selector to the domNode, not the document root.
+  * this can be thought of as a mini application or perhaps a component
 	
 ###Collections
 
