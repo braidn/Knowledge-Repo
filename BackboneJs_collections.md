@@ -1,4 +1,4 @@
-##notes
+##Notes
 
 * Just a collection of models
 * Acts a whole lot like [ActiveRecord][1] in rails
