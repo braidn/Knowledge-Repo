@@ -2,7 +2,7 @@
 
 * Avoids tying the application to the state of the dom.
 * Adds the idea of file organization, although this is very open.
-* Makes life testable.
+* Makes life testable. (Developer Ergonomics)
 
 ##Notes
 
