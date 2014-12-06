@@ -14,12 +14,19 @@
   * this is interesting because you can capture events not defined elsewhere.
   * creates a scoped jquery selector to the domNode, not the document root.
   * this can be thought of as a mini application or perhaps a component
-	
-###Collections
 
-* Will extend from the all ready defined view (instead of backbone)
-* Offten times have the word list in them (PlayerListView)
-	* This is a formality designed from building desktop applications
+###Rendering
+
+* The actual render method is a noOp on all views. This forces us to define it
+* Able to change the view by key value pairs: `tagName: 'li' / className: 'bilbo'` 
+* Allows the dev to use an element that exists on the page.
+  * do need to wait for the document to be ready before having access.
+
+###Templates
+
+* HTML fragment that accepts a JS object that fills in the interpreted sections.
+* Should not be used in script tags if in Production.
+  * precompilation can be done during the deploy process and won't slow down a user later.
 
 ###Events / Event Handlers
 
@@ -28,3 +35,9 @@
 * jQuery events are a good place to start
 * Elements can be anything (button, div, etc)
 * Methods are defined in the current view.
+
+###CollectionsViews
+
+* Will extend from the all ready defined view (instead of backbone)
+* Offten times have the word list in them (PlayerListView)
+	* This is a formality designed from building desktop applications
