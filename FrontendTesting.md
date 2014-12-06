@@ -11,6 +11,8 @@ lifecycle are heavily tested. Make sure not to test these methods due to simple 
   * this colides with the idea that your tests should lead or dictate your structure.
   * sometimes you need to spitball an implementation, catch up with tests and move on from there.
 * Test should be more focused that the interface to these methods are called, not results.
+* Avoid testing what is generated to the DOM/Setting up a complicated DOM and asserting on it.
+  * if we get to this point we need to head over to [Selenium][3]
 
 ###Tooling
 
@@ -20,3 +22,4 @@ lifecycle are heavily tested. Make sure not to test these methods due to simple 
 
 [1]: '/MochaJs'
 [2]: '/SinonJs'
+[3]: '/Selenium'
