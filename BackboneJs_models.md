@@ -26,3 +26,8 @@ newly initiated model
 * Items are saved with the `save()` method to the server
 * Items are deleted with the `delete()` method from the server
   * references to the model will not be destroyed though.
+
+##REST
+
+* Really works with the URL and the method name (GET/POST)
+  * example: `GET /users/1 data: { first_name: 'wicked' }`
