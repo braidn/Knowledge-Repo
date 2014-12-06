@@ -1,5 +1,6 @@
 ##Notes
 
+* Manage the presentation of a mode
 * uses a `render()` function to push an `el` tag 
   * this can be changed with `tagName:` to the DOM
   * very common to just create a render function when creating the view
