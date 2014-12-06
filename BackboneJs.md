@@ -5,7 +5,7 @@
   1. Set up a view to output the information to the browser
   1. Instantiate an instance of the model class
   1. Instantiate an instance of the view class and pass the model
-     instance int
+     instance in
   1. Do some cool shit
   1. Save, said cool shit
 * [Views][1]
