@@ -20,8 +20,10 @@
 * [Views][1]
 * [Models][2]
 * [Collections][3]
+* [Router][4]
 * [[Backbone Antipatterns|BackboneJs_antipatterns]]
 
 [1]: BackboneJs_views
 [2]: BackboneJs_models
 [3]: BackboneJs_collections
+[4]: BackboneJs_router
