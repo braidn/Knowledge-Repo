@@ -2,3 +2,4 @@
 * Controllers are where almost all JS frameworks differ from stuff like Rails
   * Instead of considering Backbone to be MVC, think MV*
   * The idea of controllers is split between `Backbone.View` and `Backbone.Router`
+  * Models/Collections are really just ways to persist the data to a backend of sorts.
