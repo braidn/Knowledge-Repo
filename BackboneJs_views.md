@@ -9,6 +9,9 @@
   * this is done by calling `events: {}`
   * and passing in `"<event> <selector>" : "<function>"`
   * below the events attribute we define the function `<functionName> : function(){do something;}`
+* Views can be created to encapsulate existing elements on the page.
+  * this is interesting because you can capture events not defined elsewhere.
+  * creates a scoped jquery selector to the domNode, not the document root.
 	
 ###Collections
 
