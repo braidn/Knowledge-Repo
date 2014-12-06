@@ -10,6 +10,7 @@ lifecycle are heavily tested. Make sure not to test these methods due to simple 
 * Due to the complexity of Frontend apps, sometimes strict TDD doesn't make sense.
   * this colides with the idea that your tests should lead or dictate your structure.
   * sometimes you need to spitball an implementation, catch up with tests and move on from there.
+* Test should be more focused that the interface to these methods are called, not results.
 
 ###Tooling
 
