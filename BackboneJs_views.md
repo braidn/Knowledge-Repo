@@ -21,6 +21,8 @@
 * Able to change the view by key value pairs: `tagName: 'li' / className: 'bilbo'` 
 * Allows the dev to use an element that exists on the page.
   * do need to wait for the document to be ready before having access.
+* Rendered views can be removed by calling `remove`.
+* Sometimes best to organize an app around a single view/entry-point.
 
 ###Templates
 
@@ -30,11 +32,13 @@
 
 ###Events / Event Handlers
 
-* Events (button clicks) are placed into their corresponding view/collectionView
+* Events (button clicks) are placed into their corresponding view/collectionView.
 	* syntax is `events: { 'eventName cssName': 'functionName' }`
-* jQuery events are a good place to start
-* Elements can be anything (button, div, etc)
-* Methods are defined in the current view.
+* jQuery events system.
+* Elements can be anything (button, div, etc).
+* FuncMethods are defined in the current view.
+* Memory Management:
+  * use `this.listenTo` to listen to events and it will remove object references as needed
 
 ###CollectionsViews
 
