@@ -7,27 +7,27 @@ newly initiated model
 * A model will often have a bunch of methods
 * models are often built prior to a interface so they can be tricky
 
-##Methods
+###Methods
 
 * `Parse`: Run once the model from the server is returned. Great for overriding data.
   * working with nested data you can parse out and re-manage items.
 * `toJSON`: Create a json representation of the model data.
 
-##Attributes
+###Attributes
 
 * Accessed with the above `get` and `set` methods.
 
-##Events
+###Events
 
 * `this.on()` is one way, maybe not the best way to listen to events
 
-##Persistence 
+###Persistence 
 
 * Items are saved with the `save()` method to the server
 * Items are deleted with the `delete()` method from the server
   * references to the model will not be destroyed though.
 
-##REST
+###REST
 
 * Really works with the URL and the method name (GET/POST)
   * example: `GET /users/1 data: { first_name: 'wicked' }`
