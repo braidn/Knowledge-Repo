@@ -1,5 +1,6 @@
 ##Notes
 
+* More traditionally the 'Controller' in MVC
 * Manage the presentation of a mode
 * uses a `render()` function to push an `el` tag 
   * this can be changed with `tagName:` to the DOM
