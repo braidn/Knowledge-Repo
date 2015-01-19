@@ -25,13 +25,16 @@
 
 ## External Pages
 
-* [Views][1]
-* [Models][2]
-* [Collections][3]
-* [Router][4]
-* [[Backbone Antipatterns|BackboneJs_antipatterns]]
+1. [Views][1]
+1. [Models][2]
+1. [Collections][3]
+1. [Router][4]
+1. [Backbone Antipatterns][5]
+1. [Testing][6]
 
 [1]: BackboneJs_views
 [2]: BackboneJs_models
 [3]: BackboneJs_collections
 [4]: BackboneJs_router
+[5]: BackboneJs_antipatterns
+[6]: BackboneJs_testing
