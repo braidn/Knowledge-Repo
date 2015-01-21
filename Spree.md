@@ -14,6 +14,7 @@
 
 * `current_user` works as a check system
 * `spree_current_user` is more specific to the Spree system
+* add an admin role to a user: `user.spree_roles << Spree::Role.find_by_name(:admin)`
 
 ### Models
 
