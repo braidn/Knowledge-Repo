@@ -1,4 +1,5 @@
 ###To Read
+
 1. It's Not How Good You Are, Its How Good You Want to Be
 1. Whatever You Think, Think the Opposite
 1. Seven DB in Seven Weeks
@@ -13,11 +14,13 @@
 
 ###Reading
 
-
+1. Clean Ruby
+1. So Anyway 
 1. Thinking Fast And Slow 
 
 ###Fin
 
+1. Thinking Like A Freak
 1. Rails Recipies
 1. Rails View
 1. Sql And Relational Theory
