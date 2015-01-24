@@ -2,8 +2,6 @@
 1. It's Not How Good You Are, Its How Good You Want to Be
 1. Whatever You Think, Think the Opposite
 1. Seven DB in Seven Weeks
-1. Rails Recipies
-1. Rails View
 1. Professional Node.js
 1. Exploring Everyday Things with R and Ruby
 
@@ -15,11 +13,14 @@
 
 ###Reading
 
-1. Sql And Relational Theory
-1. Thinking Fast And Slow
+
+1. Thinking Fast And Slow 
 
 ###Fin
 
+1. Rails Recipies
+1. Rails View
+1. Sql And Relational Theory
 1. Shape of Design
 1. The Obstacle is The Way
 1. Daily Rituals
