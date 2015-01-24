@@ -15,6 +15,7 @@
 
 ###Collection Methods
 
+* Many of these are proxies to Underscore methods like map/filter.
 * Most transformative processes are mapped 1to1 to Underscore
 * `remove`: filter a collection into a variable and then remove all models from that.
   * will take one model or an array of models.
