@@ -7,6 +7,10 @@
 * Create a patch: `git diff > changes.patch`
   * this patch can then be applied to any project using: `git apply changes.patch`
 
+## Diffing
+
+* If two buffers are open they can be diffed by performing:
+  * `windo.diffthis` and turned off with `windo.diffoff`
 
 ##GitHub or _HUB_
 
