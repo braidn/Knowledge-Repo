@@ -1,3 +1,5 @@
+# EmberJS
+
 ##Scratch
 
 * Calling `reopen` on something acts very much like monkey patching in rails
