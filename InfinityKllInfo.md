@@ -7,7 +7,8 @@
 
 ### Install .bin
 
-1. 
+1. Press the flash button on the back of the keyboard
+1. Run `dfu-util -D name_of_bin.bin` to flash the KB 
 
 ### Handy Links
 
