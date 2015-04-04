@@ -2,13 +2,21 @@
 
 ### Building A .bin File
 
-1. Navigate to the controller base directory
+1. Navigate to the controller `/build` directory
 1. Run: `/kll/path/to/infinity/build.sh`
 
 ### Install .bin
 
 1. Press the flash button on the back of the keyboard
 1. Run `dfu-util -D name_of_bin.bin` to flash the KB 
+
+### 60% HHKB3
+
+* Basically the same layout as a HHKB.
+* Function 1 is behind the RShift.
+* Function 2 is below the LShift.
+* Function 3 is below RShift.
+* Function 4 is below Function 1.
 
 ### Handy Links
 
