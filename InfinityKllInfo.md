@@ -12,6 +12,10 @@
 
 ### Layering
 
+* There are three ways to change the layer of a keyboard:
+  * _layerLatch_: shift the layer in place while held down.
+  * _layerLock_: lock the layer in place over the current.
+  * _layerShift_: only shift the layer for the next keypress.
 * Extra layers are set in the `-DPartialMaps` make flag.
 * Each layer is set using the `;` delimiter
   * an example being: `layer1;layer2`
