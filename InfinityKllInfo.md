@@ -8,8 +8,16 @@
 ### Install .bin
 
 1. Press the flash button on the back of the keyboard
-1. Run `dfu-util -D name_of_bin.bin` to flash the KB 
+1. Run `dfu-util -D name_of_bin.bin` to flash the KB
 
+### Layering
+
+* Extra layers are set in the `-DPartialMaps` make flag.
+* Each layer is set using the `;`
+  * an example being: `layer1;layer2`
+* If there is a space seperating layers they get combined
+  * an example being: `layer1 layer1-5;layer2` 
+  
 ### 60% HHKB3 Layout
 
 * Basically the same key structure as a HHKB.
