@@ -3,7 +3,7 @@
 ### Building A .bin File
 
 1. Navigate to the controller `/build` directory
-1. Run: `/kll/path/to/infinity/build.sh`
+1. Run: `../kll/path/to/infinity/build.sh`
 
 ### Install .bin
 
