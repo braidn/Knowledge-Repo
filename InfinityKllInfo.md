@@ -10,9 +10,9 @@
 1. Press the flash button on the back of the keyboard
 1. Run `dfu-util -D name_of_bin.bin` to flash the KB 
 
-### 60% HHKB3
+### 60% HHKB3 Layout
 
-* Basically the same layout as a HHKB.
+* Basically the same key structure as a HHKB.
 * Function 1 is behind the RShift.
 * Function 2 is below the LShift.
 * Function 3 is below RShift.
