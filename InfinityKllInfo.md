@@ -12,6 +12,7 @@
 
 ### Layering
 
+* Layering starts from 0. Meaning all partials begin at index 1.
 * There are three ways to change the layer of a keyboard:
   * _layerLatch_: shift the layer in place while held down.
   * _layerLock_: lock the layer in place over the current.
