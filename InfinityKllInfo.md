@@ -13,7 +13,7 @@
 ### Layering
 
 * Extra layers are set in the `-DPartialMaps` make flag.
-* Each layer is set using the `;`
+* Each layer is set using the `;` delimiter
   * an example being: `layer1;layer2`
 * If there is a space seperating layers they get combined
   * an example being: `layer1 layer1-5;layer2` 
