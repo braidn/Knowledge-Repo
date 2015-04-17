@@ -25,3 +25,10 @@
 
 * leans heavily on the state_machine gem
 * `checkout_progress` helper method for figuring out where in it the user is
+
+### PaymentMethods
+
+* Collection of payment methods for a spree customer
+* These can be added to by placing new ones in the `app/models/spree/payment_method` dir
+* Initialization of each new one is required in the spree.rb config file
+ * ex: `config.spree.payment_methods << Spree::PaymentMethod::Name`
