@@ -15,3 +15,6 @@
 * Binding to a model is done by peppering markup tags with `#modelName`
   * If one were to add this to an input field `<input type="text" #todo>` everything will automatically sync.
   * This syntax is odd but it is nice that this function is opt in.
+* When using `[]` to surround an attribute it means that it is invoking 'data binding'.
+  * If the attribute changes, it will be reflected immediately within the DOM.
+  * Handy especially if an attribute is used to toggle specific CSS classes.
