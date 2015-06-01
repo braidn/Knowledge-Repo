@@ -12,3 +12,6 @@
 
 * Every template will have it's own `style` tag.
   * This can be imported using the `import url()` syntax or can be written inline.
+* Binding to a model is done by peppering markup tags with `#modelName`
+  * If one were to add this to an input field `<input type="text" #todo>` everything will automatically sync.
+  * This syntax is odd but it is nice that this function is opt in.
