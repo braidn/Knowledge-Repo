@@ -4,6 +4,7 @@
 * guest checkout can be set to false in the spree initializers file
 	* this and many other settings can be set here (backorders, etc)
 	* even things like how many items are shown per page (pagination)
+* [Notes on the API][1]
 
 ### Routes
 
@@ -32,3 +33,5 @@
 * These can be added to by placing new ones in the `app/models/spree/payment_method` dir
 * Initialization of each new one is required in the spree.rb config file
  * ex: `config.spree.payment_methods << Spree::PaymentMethod::Name`
+
+[1]: /SpreeApi
