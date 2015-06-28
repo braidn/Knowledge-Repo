@@ -24,3 +24,10 @@
 * A single type is declared before the opening parens denoting the return type.
 * There can be any number of return values for a function.
   * These return values, when more than one are called 'result parameters'
+
+### Pointers
+
+* Go passes arguments by value, which means copies of the arguments are created.
+* This can be mitigated by passing a pointer to a value.
+* To access a pointer to a value use the `&` in front of the value.
+* To dereference a pointer simply add a `*` in front of the value.
