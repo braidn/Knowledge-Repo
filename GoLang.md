@@ -12,3 +12,15 @@
 * Generally found at the beginning of the code, especially if using gofmt.
 * Can be a single string or a web url.
 * `go get` is the command to pull down these packages.
+
+### Exports
+
+* Variables and functions are exported from their imports
+* These names are always titlecased.
+
+### Functions
+
+* Types are defined after the argument names.
+* A single type is declared before the opening parens denoting the return type.
+* There can be any number of return values for a function.
+  * These return values, when more than one are called 'result parameters'
