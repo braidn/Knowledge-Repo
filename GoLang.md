@@ -6,6 +6,8 @@
   * However importing the fmt package and calling `fmt.Println` and `fmt.Printf` is more favorable.
 * Programs begin their execution in the main function.
   * This can be thought of as the entry point of the software.
+* _Only_ constants are immutable.
+  * However since arguments are passed by value, these original values won't be mutated.
 
 ### Imports
 
