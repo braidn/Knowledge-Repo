@@ -33,3 +33,21 @@
 * This can be mitigated by passing a pointer to a value.
 * To access a pointer to a value use the `&` in front of the value.
 * To dereference a pointer simply add a `*` in front of the value.
+
+### Structs (a kind of type)
+
+* Collections of fields and their properties.
+* Lightweight classes that support composition but, not inheritance.
+* No need to set up getter or setter functions, this is done for you.
+* Structs can be created, assigned to a var and updated with by using: `var.field = val`
+* The keyword `new` can be used to initialize a zeroed value of the type and return a pointer to it.
+
+### Composition and Interfaces
+
+* Since GO has no inheritance it relies on these two terms.
+* Different types can be embedded in other types to achieve composition.
+* Dot notation or combining struct literals can be used to assign values to these fields.
+  * Maybe hard to imagine but looks just like JSON.
+  * Also any methods defined on one type are accessible by other composed types.
+* If a struct has an interface and it composes itself to another struct, the interface is shared.
+* When structs get big and crazy look to use pointers to save on memory allocation.
