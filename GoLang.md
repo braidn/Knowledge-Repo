@@ -51,3 +51,25 @@
   * Also any methods defined on one type are accessible by other composed types.
 * If a struct has an interface and it composes itself to another struct, the interface is shared.
 * When structs get big and crazy look to use pointers to save on memory allocation.
+
+### Collections
+
+* Arrays uses bracket style notation and can be created with a set length: `var a [23]int`
+  * Access to the items in the above array: `a[1]`
+  * Values can be passed on initiation: `a := [2]int{1,2}`
+  * The splat operator can be used to lazily assign a length: `a := [...]int{1,2}
+* Multi dimensional arrays are completely ok: `a := [2l][1]int`
+* _Slices_ are a bit more common, they are basically an interface wrapper for the array.
+* Slice example: `p := []int{1,2}`
+* Slices simply hold reference to an underlining array.
+* Slices can be sliced where the new array will refer to a subsection of the original.
+  * ex: `someSlice[1:22]`
+* Slices can be created with the `make` keyword instead of using the slice literal context.
+  * ex: `make([]string, 3)`
+* The append function can be used to add values to a slice.
+  * ex: `append(slice, ("some", "values")`
+* _Range_ function is used to iterate over a slice.
+  * ex: `range slice { do something fun }`
+* When iterating like this using a for loop, the location and value of the slice are passed in.
+  * the programmer needs to use an underscore if they don't want use one or the other in the function block.
+* `break` and `continue` are key words used to skip or stop iteration of a slice.
