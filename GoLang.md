@@ -73,3 +73,7 @@
 * When iterating like this using a for loop, the location and value of the slice are passed in.
   * the programmer needs to use an underscore if they don't want use one or the other in the function block.
 * `break` and `continue` are key words used to skip or stop iteration of a slice.
+* _Maps_ are hashes or structures where there are keys and their respected values.
+* When maps are not created from the literal syntax they can be created using `make` as well.
+* To delete a key from a map, the `delete(map, key)` ifdks used
+* To test that a key is in a map: `val, ok = map[key]`
