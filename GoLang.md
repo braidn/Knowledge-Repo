@@ -77,3 +77,18 @@
 * When maps are not created from the literal syntax they can be created using `make` as well.
 * To delete a key from a map, the `delete(map, key)` ifdks used
 * To test that a key is in a map: `val, ok = map[key]`
+
+### Control
+
+* `if`s can begin assign scoped variables which are only in scope of the `if`
+* The only looping structure that Go has is the `for` loop.
+* `For` loops are very remensicent of JS but without the need of `()`
+  * however they can be written like a while loop: `for sum < 100 { do something }`
+  * and infinite loops are completely ok to the compiler: `for { do something }`
+* `Switch` statements exist in Go allowing the avoidance of nasty if/else statements
+  * only values of the same type can be compared using the `switch` statement
+  * like Ruby, a default value can be set if all conditionals fail
+  * conditionals can be expressions that get assesed prior to comparing: `case 1 - ten:`
+  * Due to conditionals, you can have multiple values as well: `case 1, 2, 3:`
+  * The `fallthrough` keyword will evaluate the switch block and continue to evaluate the rest.
+  * And of course the `break` statement will stop execution completely. 
