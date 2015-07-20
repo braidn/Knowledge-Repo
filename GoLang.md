@@ -8,6 +8,13 @@
   * This can be thought of as the entry point of the software.
 * _Only_ constants are immutable.
   * However since arguments are passed by value, these original values won't be mutated.
+* Code organization (just a general idea and gofmt might not do this):
+  * List of Packages for import
+  * Constants
+  * Variables
+  * Main Types (Structs). Try to keep this as small as possible per file.
+  * Functions
+  * Methods
 
 ### Imports
 
@@ -92,3 +99,7 @@
   * Due to conditionals, you can have multiple values as well: `case 1, 2, 3:`
   * The `fallthrough` keyword will evaluate the switch block and continue to evaluate the rest.
   * And of course the `break` statement will stop execution completely. 
+
+### Interfaces
+
+* 
