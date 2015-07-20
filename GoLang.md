@@ -102,4 +102,8 @@
 
 ### Interfaces
 
+* There is the concept of a function and a method in Go
+  * method's have defined receivers much like classes and methods in Ruby
+* Methods can be defined on any type defined in the package
+  * However, methods can not be defined from another package or basic types
 * 
