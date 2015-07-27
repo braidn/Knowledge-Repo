@@ -1,6 +1,8 @@
 # NeoVim
 
-For some reason, neovim has an issue with some implementations of xterm and ctrl-h.
+### Known Issues
+
+1. For some reason, neovim has an issue with some implementations of xterm and ctrl-h.
 A possible fix follows:
 
 ```
