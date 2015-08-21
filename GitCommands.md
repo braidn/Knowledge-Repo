@@ -1,4 +1,4 @@
-##Most Used Commands
+### Most Used Commands
 
 * Checkout and track remote repo: `git checkout -t origin/branchName`
 * Delete remote branch: `git push origin :branchName`
@@ -7,11 +7,16 @@
 * Create a patch: `git diff > changes.patch`
   * this patch can then be applied to any project using: `git apply changes.patch`
 
-## Diffing
+### Diffing
 
 * If two buffers are open they can be diffed by performing:
   * `windo.diffthis` and turned off with `windo.diffoff`
 
-##GitHub or _HUB_
+### Branching
+
+* to rename a target branch: `git branch -m <oldname> <newname>`
+* to rename current branch: `git branch -m <newname>`
+
+### GitHub or _HUB_
 
 * Turn issue into pr: `hub pull-request -i issue# -h owner:name/of/branch`
