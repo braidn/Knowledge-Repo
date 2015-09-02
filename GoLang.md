@@ -101,9 +101,11 @@
   * The `fallthrough` keyword will evaluate the switch block and continue to evaluate the rest.
   * And of course the `break` statement will stop execution completely. 
 
-### Interfaces
+### Methods
 
 * There is the concept of a function and a method in Go
   * method's have defined receivers much like classes and methods in Ruby
 * Methods can be defined on any type defined in the package
   * However, methods can not be defined from another package or basic types
+* Pointer receivers are favorable for methods due to not copying values on each call.
+* Pointer receivers are also favorable because they allow the programmer to modify the pointer value.
