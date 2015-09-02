@@ -2,6 +2,7 @@
 
 ### General Notes
 
+* Go is an OO style language with no classes.
 * Printing can be done with `println` and `print` functions.
   * However importing the fmt package and calling `fmt.Println` and `fmt.Printf` is more favorable.
 * Programs begin their execution in the main function.
