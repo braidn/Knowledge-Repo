@@ -109,3 +109,37 @@
   * However, methods can not be defined from another package or basic types
 * Pointer receivers are favorable for methods due to not copying values on each call.
 * Pointer receivers are also favorable because they allow the programmer to modify the pointer value.
+
+### Interface 
+
+* A kind of type that is defined by a set or collection of methods.
+* These can be glue between structs and more simple/generic functions.
+* New types can quickly implement these interfaces and get access to these functions.
+
+#### Errors
+
+* Errors are an interface that with a single `Error` method that returns a string.
+
+### Concurrency
+
+* Variables are not shared across goroutines and therefore prevent race conditions
+* A goroutine is a lightweight thread managed by the Go runtime.
+* These are created by using the simple `go` keyword
+* Goroutines are also used to push items into channels without causing deadlock
+  * This occurs due to the main thread working on the channel and the groutine waiting
+
+#### Channels
+
+* Channels allow the sending receiving of values through the `->` operator.
+* Data always flows in the direction of the arrow.
+* Channels can be created using make: `ch := make(chan int)`
+* These can be buffered, to do so add the length as a second argument.
+  * ex: `ch := make(chan int, 100)`
+* Channels are unlike files, where they don't need to be explicitly closed
+
+#### Sender and Receiver
+
+* Senders are used to close a channel to indicate no more values are available/allowed.
+* Receivers can test if a channel has been closed
+
+  * Buffered channels will only send to the block when the buffer is full.
