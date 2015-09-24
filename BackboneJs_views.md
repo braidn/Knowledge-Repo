@@ -46,3 +46,9 @@
 * Will extend from the all ready defined view (instead of backbone)
 * Offten times have the word list in them (PlayerListView)
 	* This is a formality designed from building desktop applications
+  * 
+
+### Common and Cryptic Errors
+
+* `this._ensureElement is not a function`
+  * the new keyword wasn't used to instantiate this view.
