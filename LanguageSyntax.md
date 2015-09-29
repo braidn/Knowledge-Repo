@@ -4,4 +4,3 @@
 
 Go at Google: Language Design in the Service of Software Engineering
 http://talks.golang.org/2012/splash.article
-via Instapaper
