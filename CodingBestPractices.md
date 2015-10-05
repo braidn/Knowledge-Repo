@@ -1,3 +1,4 @@
+# Coding Best Practices
 ##Notes
 
 * Always have an else (you never know what error will occur)
