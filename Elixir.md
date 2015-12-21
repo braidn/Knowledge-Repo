@@ -60,4 +60,7 @@
 * Just like regular assignment, Elixir pattern matches params to function calls
   * Because of this Elixir allows one function to execute multiple bodies much like a case statement.
 * Underscores can be used as params but do to pattern matching this acts more like a splat, collecting any val.
-* 
+* Scope is defined within the function and acts much like a clojure, binding all params to connected functions.
+* `&` operator converts the expression into a function where `&1` and `&2` are params
+  * This ends up being a great solution to pass functions to other functions
+  * Ex: `Enum.map [1,2,3], &(&1 + 1)` as a simple list incrementer 
