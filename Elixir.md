@@ -63,4 +63,28 @@
 * Scope is defined within the function and acts much like a clojure, binding all params to connected functions.
 * `&` operator converts the expression into a function where `&1` and `&2` are params
   * This ends up being a great solution to pass functions to other functions
-  * Ex: `Enum.map [1,2,3], &(&1 + 1)` as a simple list incrementer 
+  * Ex: `Enum.map [1,2,3], &(&1 + 1)` as a simple list incremented
+* Functions are identified by there name and their arity.
+
+### Function Body/Block
+
+* Underlying Elixir code for the block looks like: `def method(n), do: n * 2`
+  * Any amount of lines, using () can be passed to ().
+  * `do/end` blocks are just syntactic sugar and at compile time get morphed into the above.
+  * The do syntax makes it look much more lisp like with multiple functions and args passed inline
+* Function calls follow the same kind of pattern matching that the `=` sign does.
+  * This means you can have multiple functions named the same with diff arity without raising an error.
+* This kind of programming is known common in functional languages.
+  * An anchor is created which is inherently easy
+  * A recursive function will end up calling the anchor and breaking the function calls.
+  * Order of these functions matter, Elixir looks from the top down.
+  * These types of functions should be grouped near each other in the file definition.
+* Guard clauses can exist in the method definition itself.
+  * ex: `def is_awesome(n) when is_atom(n) do`
+  * Handy way to control whether a recursive function will be called through pattern matching.
+  * There are is a limited amount of expressions that function in guard clauses so be careful.
+* Default params are a possibility using: `param \\ default value` syntax`.
+* Private functions are defined using the `defp` syntax over the `def` syntax.
+* `|>` operator takes the result of the expression on it's left and passes it to as the first param to the function on it's right.
+  * This is also called a 'pipeline'.
+  * ALWAYS put parens around function params in pipelines.
