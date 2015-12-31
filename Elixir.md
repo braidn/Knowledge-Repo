@@ -88,3 +88,27 @@
 * `|>` operator takes the result of the expression on it's left and passes it to as the first param to the function on it's right.
   * This is also called a 'pipeline'.
   * ALWAYS put parens around function params in pipelines.
+
+## Modules
+
+* Used to namespace functions and wrap macros, structs, protocols, and other modules.
+* There are several directives for modules [`import`, `alias`, `require`].
+  * All directives are lexical scoped so their scope will be within the module definition (usually).
+
+### Import
+
+* Imports the functions or macros into the current scope. Used to stay dry.
+  * ex: `import Module [, only:|except: ]`.
+* Second param is a list of imported functions and their arity: `[flatten: 1]`.
+* This allows the programmer to be specific with what is imported versus taking everything.
+
+
+### Alias
+
+* Creates an alias of the module.
+  * ex: `alias Mix.Tasks.Set, as: Set`.
+* Cuts down on the amount of namespacing code required when writing/calling functions.
+
+### Require
+
+* Only used when one wants to use macros defined by the specific module.
