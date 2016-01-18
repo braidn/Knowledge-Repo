@@ -5,6 +5,7 @@
 1. Seven DB in Seven Weeks
 1. Professional Node.js
 1. Exploring Everyday Things with R and Ruby
+1. Creative Priority
 
 ### Stuck
 
@@ -14,13 +15,15 @@
 
 ###Reading
 
-1. Clean Ruby
-1. So Anyway 
 1. Functional Javascript
-1. Thinking Fast And Slow 
+1. The Element
+1. A Year Without Pants 
 
 ###Fin
 
+1. Clean Ruby
+1. So Anyway 
+1. Thinking Fast And Slow 
 1. Thinking Like A Freak
 1. Rails Recipies
 1. Rails View
