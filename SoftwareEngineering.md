@@ -1,4 +1,4 @@
-# Computer Science
+# Compact CS
 
 ### Laws or Principles:
 
