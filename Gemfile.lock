@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     charlock_holmes (0.7.3)
     diff-lcs (1.2.5)
@@ -64,3 +64,6 @@ DEPENDENCIES
   foreman
   gollum
   unicorn
+
+BUNDLED WITH
+   1.10.6
