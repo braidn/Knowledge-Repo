@@ -1,3 +1,5 @@
+#Solidus/Spree
+
 ## Notes
 
 * `store_menu?` used to check if we are in the admin menu
@@ -26,6 +28,7 @@
 
 * leans heavily on the state_machine gem
 * `checkout_progress` helper method for figuring out where in it the user is
+* Conditionals on order steps should be defined in the `checkout_flow` in order.rb
 
 ### PaymentMethods
 
