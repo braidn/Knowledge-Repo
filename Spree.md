@@ -28,7 +28,8 @@
 
 * leans heavily on the state_machine gem
 * `checkout_progress` helper method for figuring out where in it the user is
-* Conditionals on order steps should be defined in the `checkout_flow` in order.rb
+* If orders need to skip certain steps (conditionally per user) than it's easier to set up certain after_transition blocks to the required skipped step that calls `order.next` at the end of the method.
+  * ex: `after_transition to: :delivery, do: :someMethod that calls next`  
 
 ### PaymentMethods
 
