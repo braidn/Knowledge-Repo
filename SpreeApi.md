@@ -1,4 +1,4 @@
-# Spree API
+# Solidus/Spree API
 
 ## Notes
 
