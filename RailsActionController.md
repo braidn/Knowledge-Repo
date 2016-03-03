@@ -1,3 +1,5 @@
+# Rails Controllers
+
 ##Notes
 
 >Instructions on how your app will handle certain requests(called methods or 'actions'). Some things to think about:  
@@ -10,6 +12,9 @@
 * use the keyword `return` to jump early out of a resource
 * If in the controller and you pass `respond_to` an item not surrounded by {} then it looks for it's name (create, delete, show) in the proper view directory.
 * If you place a `private` method in the application controller it will be accessible by ALL controllers BUT never as an action
+* If your model differs from the class of the controller, this can be changed:
+  * ex: `def model_class; ::SomeClass; end`
+  * the `model_class` method will overide the rails magic of constant lookup.
 
 ### Other Resources
 
