@@ -19,3 +19,4 @@ All of the above are done with the binding key:
   * `space` to start selection `enter` to confirm the copy (move around
     like in vim
   * `]` to paste the selected into whatever
+* `move-window -t session_name`: move a window to another session
