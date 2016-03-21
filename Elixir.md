@@ -14,6 +14,12 @@
   * each process has it's own heap which vastly accelerates GC threads.
 * Due to the functional aspect, data is always transformed, never changed.
 * String interpolation in Elixir is the same as in Ruby.
+* A Simple map implementation could be created by doing the following:
+  * `myMap([tail | head], fun), do: [func.(head) | myMap(tail, func)]`
+  * `myMap([1,2,3,4], fn (x) -> x*2 end # [2,4,6,8]`
+  * a shorthand for above is: `mmap [1,2,3,4], &1(&1 * 2)`
+* An incrementor or an 'invariant' can be passed in the second argument.
+  * This is often times used to carry state around from one iteration to the next.
 
 ## Iex Prompt
 
@@ -23,7 +29,11 @@
 
 * Created much like arrays in most other languages
 * The assignment operator can cast a list onto another list.
-  * This would assign each of the characters of the second list to each of the first. 
+  * This would assign each of the characters of the second list to each of the first.
+* Have the concept, like many functional languages of `head` and `tail`
+* If all values in a list represent printable characters, then elixir will output the word.
+  * This can be thought of as strings in ruby. Each char has a specific list/array location.
+* Because of the head/tail idea, many lists will go through a form of recursion.
 
 ## Value Types
 
@@ -64,7 +74,8 @@
 * `&` operator converts the expression into a function where `&1` and `&2` are params
   * This ends up being a great solution to pass functions to other functions
   * Ex: `Enum.map [1,2,3], &(&1 + 1)` as a simple list incremented
-* Functions are identified by there name and their arity.
+* Functions are identified by there name and their rarity.
+* A private function is defined using the `defp` keyword
 
 ### Function Body/Block
 
