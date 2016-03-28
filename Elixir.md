@@ -35,6 +35,33 @@
   * This can be thought of as strings in ruby. Each char has a specific list/array location.
 * Because of the head/tail idea, many lists will go through a form of recursion.
 
+## Dictionaries
+
+* Just like in many other programming languages, these are simple key value pairs.
+* They come in a variety of flavors: HashDict, Maps, and keywords.
+* Maps and HashDicts implement the `Dict` behavior.
+  * The Dict module will have plenty of methods to modify and change Dictionary types.
+* To access a specific values, use an atom like: `dic[:key]`
+* Multiple identical keys are allowed but require some special getters to get information.
+* Like most things in Elixir, pattern matching plays a big role in Maps.
+* Maps do not allow binding of a value to a key during pattern matching. 
+* Like most things in Elixir, Maps are immutable and updating one cause a new copy.
+  * can be done by: `new_map = %{ old_map | key => val }`.
+  * all assignment changes happen after the pipe operator.
+  * this is _only_ for changing existing keys, not removing or adding.
+
+### Struct
+
+* A struct is a lightweight version of a map and allows for type pattern matching.
+* Structs are wrapped in modules to have struct specific functions defined to the associate struct.
+* Structs are accessed using dot notation: `something.name`
+* These are seemingly good for adding types like in Elm or Golang.
+* Structs can also be nested within one another. The field would take: `%{}` as a type.
+
+### Sets
+
+* Only one implementation of sets: HashSet
+
 ## Value Types
 
 * Integers can contain `_` which is used to separate large numbers.
