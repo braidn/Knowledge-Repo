@@ -15,14 +15,16 @@
 
 ###Reading
 
-1. Functional Javascript
+1. Anathem
 1. The Element
-1. A Year Without Pants 
+
 
 ###Fin
 
+1. A Year Without Pants 
 1. Clean Ruby
 1. So Anyway 
+1. Functional Javascript
 1. Thinking Fast And Slow 
 1. Thinking Like A Freak
 1. Rails Recipies
