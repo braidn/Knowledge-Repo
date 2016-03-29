@@ -87,6 +87,25 @@
   * Maps are different than key word lists because they are more efficient as they grow.
   * Square bracket notation is used to access values and dot notation if keys are atoms.
 
+### Enumeration
+
+* Items/things that can be iterated over implement the _Enumerable_ protocol.
+  * This is also known as `Enum`
+* The `Stream` module is a lot like `Enum` but works on a collection lazily.
+* Many of the methods here are similar to Ruby or functional languages (map, filter, reduce).
+* Because streams are not automatically evaluated we can compose methods to them before invoking.
+* Enums, to evaluate need all the data present, while streams can do things incrementally.
+
+### Streams
+
+* Pass a single element from function to function in a collection.
+* Returns almost the concept of a promise but, no code has been written.
+* Getting at a value of a stream is as easy as: `Enum.to_list someStream`.
+* Potentially handy methods:
+  * `Stream.cycle`: takes an enum and returns an infinite stream of the enums elements, always repeating.
+
+
+
 ## Functions
 
 * Elixir is very much a functional language. This leads functions to be first class citizens.
@@ -132,6 +151,7 @@
 * Used to namespace functions and wrap macros, structs, protocols, and other modules.
 * There are several directives for modules [`import`, `alias`, `require`].
   * All directives are lexical scoped so their scope will be within the module definition (usually).
+* These can be seen as a layer of abstraction on top of primitives.
 
 ### Import
 
@@ -139,6 +159,8 @@
   * ex: `import Module [, only:|except: ]`.
 * Second param is a list of imported functions and their arity: `[flatten: 1]`.
 * This allows the programmer to be specific with what is imported versus taking everything.
+* This can almost be seen as a form of duck typing
+  * ie: If it looks like a list and quacks like a list, it must be a list.
 
 
 ### Alias
