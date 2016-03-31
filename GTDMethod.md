@@ -31,17 +31,17 @@ We go through 5 discrete stages as we deal with each piece of our work
 ###Five Phases of Natural Planning
 
 1. Purpose: The why of the project/meeting/thing/item
-  1. It defines success, one can't feel good without knowing the purpose
+  * It defines success, one can't feel good without knowing the purpose
      of things
 1. Clarifying Outcomes: one can't see how to do something unless they
    envision themselves actually doing it.
 1. Brainstorming: mind mapping ideas. 
-  1. Getting ideas onto paper in any form frees up the flow for more
+  * Getting ideas onto paper in any form frees up the flow for more
      ideas that you weren't previously aware of.
-  1. This idea is known as "distributed congnition"
-  1. Avoid analysis and organization during this process
+  * This idea is known as "distributed congnition"
+  * Avoid analysis and organization during this process
 1. Organizing: pretty self explanitory
 1. Next Action: Doing
-  1. Sufficient planning is reached when every next-action percievable
+  * Sufficient planning is reached when every next-action percievable
      is layed out
-  1. Clarification of the next action will allow one to stay in control
+  * Clarification of the next action will allow one to stay in control
