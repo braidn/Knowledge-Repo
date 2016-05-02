@@ -7,6 +7,7 @@
 1. Exploring Everyday Things with R and Ruby
 1. Creative Priority
 1. Willpower: Why Self-Control is the secret of success
+1. Deep work
 
 ### Stuck
 
@@ -16,12 +17,13 @@
 
 ###Reading
 
-1. Anathem
-1. The Element
-
+1. The Organized Mind
 
 ###Fin
 
+1. Native Tongue
+1. Anathem
+1. The Element
 1. A Year Without Pants 
 1. Clean Ruby
 1. So Anyway 
