@@ -6,6 +6,7 @@
 1. Professional Node.js
 1. Exploring Everyday Things with R and Ruby
 1. Creative Priority
+1. Willpower: Why Self-Control is the secret of success
 
 ### Stuck
 
