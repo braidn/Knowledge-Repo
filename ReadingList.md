@@ -1,5 +1,9 @@
 ###To Read
 
+For 2016, attempting an [experiment on trello to house my reading list][1]
+
+[1]: https://trello.com/b/zQdvWjpo/reading
+
 1. It's Not How Good You Are, Its How Good You Want to Be
 1. Whatever You Think, Think the Opposite
 1. Seven DB in Seven Weeks
