@@ -9,4 +9,13 @@
 * When a slicing index is used that is outside the bounds of the array,
   an empty array ( `[]` ) is returned
 
+###Sorting
+
+* There are times when you will want to sort/group_by and uniq
+across a collection of active record objects. 
+This can be easily done by the following:
+  * `group_by(&:field).values.map(&:first)`
+  * The group_by will sort by the field and return a hash,
+  * values will omit the keys in the hash and the last map will return a sole selection from the newly minted array.
+
 [1]: /RubyFalsey
