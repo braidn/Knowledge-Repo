@@ -1,3 +1,7 @@
+# Handy Pry Commands
+
+* `method(:some_method_name)` wraps information for a specific method.
+  * `.source_location` will display where in the code this method will be called from
 * `exit-program` terminates the current pry buffer (good for jumping out of big loops)
 * `!` to clear the buffer
 * `cd` into models
