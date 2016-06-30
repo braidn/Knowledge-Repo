@@ -5,6 +5,12 @@
 * Due to the compilation, a `Main.elm` and an `Main` function as 
 an entry point is pretty common.
 
+## Conventions
+
+* Namespacing imports seems like a good way of building an app.
+  * This can be done during the module exports phase:
+  * ex: `module SomeComponent.ComponentName exposing (some_func)`
+
 ## General Syntax
 
 * `module` statement acts like a module exports in es6
