@@ -1,5 +1,7 @@
 # Angular 2
 
+[[_TOC_]]
+
 ## Notes
 
 * The `@` connotation above a class, is for annotations.
