@@ -1,4 +1,10 @@
-##Notes
+#Cloud 66
+
+###Docker
+
+* Env variables are not exposed to the docker instance early on so in a docker 
+file, to say migrate a database, the migrations need to be defered using `ONBUILD`:
+  * ex: `ONBUILD RUN MIX_ENV=prod mix ecto.migrate`
 
 ###Databases
 
