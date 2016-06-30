@@ -1,1 +1,3 @@
 A Personal wiki
+
+<<GlobalTOC()>>
