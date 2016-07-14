@@ -16,6 +16,11 @@
   * ex: `def model_class; ::SomeClass; end`
   * the `model_class` method will overide the rails magic of constant lookup.
 
+## Testing
+
+* As of Rails5, controller tests are now slower than integration tests.
+  * When testing iVars now, we should use the `instance_variable_get` method over `assigns()`
+
 ### Other Resources
 
 * [RestfulControllers][1]
