@@ -20,6 +20,9 @@
   * a shorthand for above is: `mmap [1,2,3,4], &1(&1 * 2)`
 * An incrementor or an 'invariant' can be passed in the second argument.
   * This is often times used to carry state around from one iteration to the next.
+* Anything encapsulated in shovel ops: `<<char>>` will be interpreted as binary.
+* There is a real delicate dance here between when to use recursion and when to use enumerators.
+  * Code is going to be easier to reason about and easier to work with when using enumerators over recursion.
 
 ## Iex Prompt
 
@@ -103,7 +106,18 @@
 * Getting at a value of a stream is as easy as: `Enum.to_list someStream`.
 * Potentially handy methods:
   * `Stream.cycle`: takes an enum and returns an infinite stream of the enums elements, always repeating.
+  * Very much like reactive programming ideas.
+  * `Stream.repeatedly`: takes a fn and invokes it repeatedly. This will often times be piped to an `Enum.take(n)` where n is an int of times that we should do something from the repeatedly call.
+  * `Stream.iterate(start, fn)`: creates an infinite stream at `start` and returns the value of the fn call over and and over again. 
+  * `Stream.unfold(val, fn)`: like iterate but returns the result and the value that is being passed back to the stream to be again invoked by the fn.
+  * `Stram.resource(val, fn, end)`: Much like unfold but commonly used to write things to disk/memory and handy to close the file since the end fn will fire when some threshold has been reached.
+* Not every iteration requires a stream. 
+* Think about when and where lazy evaluation and deferred processing make the most sense.
 
+## Collectable
+
+* Allows the construction of collections by inserting items.
+* Low level and 99% of the time, will use `Enum.into`.
 
 
 ## Functions
