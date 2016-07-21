@@ -10,6 +10,9 @@ an entry point is pretty common.
 * Namespacing imports seems like a good way of building an app.
   * This can be done during the module exports phase:
   * ex: `module SomeComponent.ComponentName exposing (some_func)`
+* Overall architecture often follows the following conventions:
+  *  An initial model, an initializer, a view function, an update function, and a subscriptions function.
+* Messages can pass from one module to another much like an event bus pattern.
 
 ## General Syntax
 
