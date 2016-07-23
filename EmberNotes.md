@@ -1,11 +1,23 @@
 # EmberJS
 
-##Scratch
+### Notes
 
 * Calling `reopen` on something acts very much like monkey patching in rails
 * Fixture data can be a great way to build out the clients side without dealing with data/servers
 * Computed property: functions built onto models
-	* the end of the function must be: `}.property('')`
+  * the end of the function must be: `}.property('')`
+* Newer versions of Ember allow you to use 'pods'.
+  * this organizes your code more by feature and less by type (MVC).
+  * ends up being more of a component structure versus an MCV structure.
+  * the same overall structure of an ember app exists, there are just namespaced by folder.
+* Still uses a resolver to look up code throughout the app directory.
+* Dependencies are managed through Bower and the cli.
+  * however, to access the ember add ons, bower is skipped and just the cli is used.
+
+### Assets
+
+* The cli and Broccoli uses a magnification and fingerprinting process.
+  * this can be toggled on a per environment basis.
 
 ###Controllers
 
