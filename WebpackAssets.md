@@ -1,6 +1,11 @@
-# webpack Asset Management
+# Webpack
 
-### With Rails
+## Notes
+
+* When webpack-dev-server is setup properly, no js includes are required during development.
+  * when the bundle is built for production, these will be automagically added. 
+
+## With Rails
 
 * Recommended to run in [hot reload mode][1]
 * Build scripts accessible by navigating to `localhost:8080/bundle.js`
