@@ -185,4 +185,18 @@
 
 ### Require
 
-* Only used when one wants to use macros defined by the specific module.
+* Only used when one wants to use macros defined by the specific module
+
+## Strings
+
+* Like in Ruby, single quoted and double quoted strings are different language constructs.
+  * Single quoted strings though in Elixir are called/considered character lists.
+  * Double quoted strings are considered true strings. 
+* Iex will print an entire list as a string if every character of the list is a printable character.
+* Pattern matching and List functions all work swimmingly with single quote strings.
+
+### Sigils
+
+* 'Magically imbued symbols` that begin with a tilde.
+* Identical to the `%w{...}` syntax found in the Ruby world.
+* The char that follows the tilde can be either uppercase or lowercase depending on intent.
