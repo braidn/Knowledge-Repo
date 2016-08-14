@@ -12,6 +12,8 @@
   * unshift works the same but with pop
   * unshift is much slower to use than push
 * `.concats` basically flattens multi dimensional arrays
+* `.splice` can be used to add an element anywhere in an array at a specified index.
+  * ex: `.splice(indexToAdd, 0, 'new value')`
 
 ###Looping
 
