@@ -29,3 +29,8 @@ the matched element
 * jQuery has all that is required built in
 	* just send `callback=?` as a special key into the url.
 	* jQuery will than throw the response into the success function
+
+###Rails
+
+* When using `heads :ok` rails actually returns a json string containing a single space.
+  *  This is not considered valid and will not allow a success block to fire when using jQuery.
