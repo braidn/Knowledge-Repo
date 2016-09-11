@@ -10,6 +10,8 @@
 
 * These patters derive from there implementation in C# and F#.
   * Looking up issues
+* This feature relies heavily on _all_ functions returning a Promise.
+  * This means that all external libs will need to implement these versus callbacks.
 
 ## Examples
 
