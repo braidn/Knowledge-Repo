@@ -1,5 +1,9 @@
 # ReactJS
 
+## Notes
+
+* [React Patterns](ReactPatterns)
+
 ###Components
 
 * `Component` is the building block behind React
