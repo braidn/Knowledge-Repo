@@ -23,6 +23,10 @@
 * Can use `defaultProps` to pass default props into the component.
 * Can use `propTypes` as a sort of soft type definition of the props.
   * [Example](ReactJsPropTypesExample)
+* Parent components can pass dom nodes to the child. These are accessible in the child with: 
+  * `this.props.children`. 
+  * This also means that children is a bit of a keyword and shouldn't be used to name props
+* The proper way of retrieving information from the children is by using props (passing callbacks)
 
 ###DOM Sync
 
