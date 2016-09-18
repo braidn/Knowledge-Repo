@@ -20,6 +20,9 @@
 * Data flows down the Component tree while events bubble up.
 * `ref` attributes are used for inputs
   * used to assign a name to a child component and referenced with `this.refs.name`
+* Can use `defaultProps` to pass default props into the component.
+* Can use `propTypes` as a sort of soft type definition of the props.
+  * [Example](ReactJsPropTypesExample)
 
 ###DOM Sync
 
