@@ -1,6 +1,8 @@
 # JavaScript Design Patterns
 
-##Decorator
+##Pattern List
+
+###Decorator
 
 * Dynamically add functionality to an object.
 * Provide an alternative to subclassing to extend/inherent functionality.
