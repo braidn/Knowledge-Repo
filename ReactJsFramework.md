@@ -61,6 +61,10 @@
   * the alternative of this is :production which removes all the helpful warnings.
 * In .jsx files this is required at the beginning for compilation: `/** @jsx React.DOM */`
 
+###Testing
+
+* When testing composed components, make sure to shallow render. This will render the component but not it's children. Otherwise tests can and will get pretty heavy.
+
 ###External links
 
 1. [Docs][2]
