@@ -2,7 +2,7 @@
 
 ## Notes
 
-* [React Patterns](ReactJSPatterns)
+* [React Patterns](ReactJsPatterns)
 
 ###Components
 
