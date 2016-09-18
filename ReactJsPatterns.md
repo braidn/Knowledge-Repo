@@ -24,4 +24,13 @@
   * due to that, using contexts can be somewhat unwieldy.
   * to get around the unwieldiness, use a POJO that has a get and register function to add items to a JS object. Then pass this interface into the contextTypes and it should make dealing with them much easier.
 
+###One-way Data Flow
+
+* Core tenant of React. Data flows from the top most component down through children and never up.
+* Relies heavily on ripping all data management out of components.
+  * This usually introduces the concept of a store (Redux/Mobx/Flux).
+* Components become 'dummy' representations of their data stores.
+  * this makes them extremely easy to reason about/test/etc.
+
+
 [1]: https://facebook.github.io/react/docs/context.html
