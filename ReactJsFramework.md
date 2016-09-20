@@ -53,6 +53,11 @@
 * Between updates, React diffs the deltas and updates only the required elements
   * pretty much sums up why it is so awesome.
 
+###Fetching Data
+
+* Most of the time fetching will be done with third party XHR libs (Fetch/Axios/Superagent)
+* Most common place to write this code is in the `componentDidMount` function.
+
 ###With Rails
 
 * So far it seems like everyone is using the react rails gem
