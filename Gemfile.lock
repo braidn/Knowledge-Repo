@@ -3,11 +3,7 @@ GEM
   specs:
     charlock_holmes (0.7.3)
     diff-lcs (1.2.5)
-    dotenv (0.11.1)
-      dotenv-deployment (~> 0.0.2)
-    dotenv-deployment (0.0.2)
-    foreman (0.75.0)
-      dotenv (~> 0.11.1)
+    foreman (0.82.0)
       thor (~> 0.19.1)
     github-markup (1.4.0)
     gitlab-grit (2.8.1)
@@ -23,28 +19,26 @@ GEM
       useragent (~> 0.14.0)
     gollum-grit_adapter (1.0.1)
       gitlab-grit (~> 2.7, >= 2.7.1)
-    gollum-lib (4.2.0)
+    gollum-lib (4.2.1)
       github-markup (~> 1.4.0)
       gollum-grit_adapter (~> 1.0)
       nokogiri (~> 1.6.4)
-      rouge (~> 1.10)
+      rouge (~> 2.0)
       sanitize (~> 2.1.0)
       stringex (~> 2.5.1)
-    kgio (2.9.2)
+    kgio (2.10.0)
     kramdown (1.8.0)
-    mime-types (2.99.2)
+    mime-types (2.99.3)
     mini_portile2 (2.1.0)
     mustache (0.99.8)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
-    pkg-config (1.1.7)
     posix-spawn (0.3.11)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
-    raindrops (0.13.0)
-    rouge (1.11.1)
+    raindrops (0.17.0)
+    rouge (2.0.6)
     sanitize (2.1.0)
       nokogiri (>= 1.4.4)
     sinatra (1.4.7)
@@ -54,9 +48,8 @@ GEM
     stringex (2.5.2)
     thor (0.19.1)
     tilt (2.0.5)
-    unicorn (4.8.3)
+    unicorn (5.1.0)
       kgio (~> 2.6)
-      rack
       raindrops (~> 0.7)
     useragent (0.14.0)
 
@@ -69,4 +62,4 @@ DEPENDENCIES
   unicorn
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
