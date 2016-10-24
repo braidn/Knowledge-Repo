@@ -5,5 +5,5 @@
 
 ## CLI
 
-* `use apps -A` to display all your apps. Lots of them hide for some reason.
+* `heroku apps -A` to display all your apps. Lots of them hide for some reason.
 
