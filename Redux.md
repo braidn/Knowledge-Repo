@@ -13,7 +13,7 @@
 
 ## 'Best' Practices
 
-* The flatter the data, the better.
+* The __flatter the data, the better__.
   * A way to do this semi-automagically is to use [Normalizer][1].
   * Returning data like this is always going to be wildly easier for all JS apps.
 * Make actions super simple, and slim.
