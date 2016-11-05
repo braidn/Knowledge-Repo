@@ -20,6 +20,7 @@
   * Extract actions that create data, use XHR requests, or induce side effects into action creators.
 * Utilize reducer composition to break up the almost inevitably large 'root reducer'.
   * These specialized reducers will break up the large main reducer and make things easier to test.
+* Search for immutability, it will calm down on the overall component updates which is an easier win.
 
 ## Testing
 
