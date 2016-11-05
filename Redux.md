@@ -1,11 +1,15 @@
 # Redux
 
+## Notes
+
 * All state data is housed in a state object. 
   * This object mainly resembles one large JS object and is read only.
 * All actions produce an object (JS) that define the intent to modify the object.
   * A seemingly large switch statement hinges on the types of a actions, and makes responses accordingly.
 * Actions pass information to a Reducer which is where the state will change.
   * Basically these calculate the next state of the application.
+* Not all state needs a store. Some can perfectly survive in local component state.
+  * especially if the state is only used by the one component and does not mutate heavily.
 
 ## 'Best' Practices
 
