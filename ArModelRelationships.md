@@ -1,3 +1,5 @@
+#Active Model Relationships
+
 ##Notes
 
 * `has_one`
@@ -13,6 +15,8 @@
   * considered a many-to-many relationship
   * used in both models (no need to use has_one or has_many)
   * active record creates a join table (named after both table names connected with a _ in alphabetical order)
+* Any of these can be explicitely linked to the class using the `class_name:` hash key.
+  * ex: `belongs_to :subscription, class_name: Juice::Subscription`
 
 ###Relations
 
