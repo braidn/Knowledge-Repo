@@ -6,6 +6,9 @@
 * Directives are also borrowed heavily from Angular
   * some of the build in ones are used a lot: `v-if, v-on, v-cloak`
 * [Some comparisons with other frameworks][1]
+* _Props_: are local vars that contain data passed from the parent elements.
+  * Generally when passing props, they are passed like `:propName="propVal"`
+  * These are defined in the templates and then passed to all child components declared in script.
 
 ##Veux
 
@@ -19,5 +22,10 @@ followed by additional parameters. Must be synchronous.
 * Don't get hung up in splitting everything into separate files.
   * This one file is often called: `store.js`
   * Until you need it, a complete store could be written in a single file (store.js for example).
+
+##Gotchas
+
+* When running the Vue Webpack loader, the `template`, `style`, and `script` tags in .vue files 
+are required for the component to properly resolve.
 
 [1]: https://rc.vuejs.org/guide/comparison.html
