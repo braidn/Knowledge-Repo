@@ -14,7 +14,7 @@
 * Special events are handled on elements using the `@keyup='someMethod'` syntax.
 * Data methods can be used to set up initial v-model values.
 
-##Veux
+##Vuex
 
 * State management layer that's like a Flux Dispatcher made love to Elm.
 * Comprised of 4 objects:
