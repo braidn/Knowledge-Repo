@@ -8,3 +8,4 @@
 
 1. Clean Ruby
 1. Thinking Like A Freak
+1. Doing it
