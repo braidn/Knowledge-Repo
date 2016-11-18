@@ -1,3 +1,3 @@
 #Teacher Bio
 
-Braden has spent the better part of the last 20 years building back-end and front-end web applications in a myriad of languages.
+Braden has spent the better part of the last 20 years building back-end and front-end web applications in a myriad of languages. With Python, PHP and Java in the past, Braden has been working on Ruby powered e-commerce applications for the past 4 years. He juggles a 100% remote lifestyle working for a Design Agency in Montreal named Dynamo. He is 100% self taught and continues to learn a new programming language every year.
