@@ -1,3 +1,5 @@
+# Rails Models
+
 ##General
 
 * `dependent => :destroy` forces the association to rely delete it's connection if itself is deleted.
@@ -13,6 +15,8 @@
 	* example might be `heard_through_x` and `heard_through_y`  
 	* the `:serialize` method works here however becomes inefficient while using
 		the find method
+* If you wanted to turn a model back into a hash:
+  * ex: `someModel.serializable_hash`
 
 ### Scopes
 
