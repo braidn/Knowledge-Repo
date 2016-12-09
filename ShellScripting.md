@@ -38,6 +38,11 @@ it won't continue and will roll back the entire script
 * To print all values in an array: `array_1[*]` or `array_1[@]`
 * To print a list of indexes: `!array_1[*]`
 
+###Conditionals
+
+* Easiest way to react to a command being available:
+  * ex: `type 'someCommand' &> /dev/null`.
+
 [1]: /ShellIFS
 [2]: /ShellLoops
 [3]: /ShellConditionals
