@@ -2,7 +2,9 @@
 
 ## Query Object
 
-* 
+* [Wraps and obfuscates ORM specific code][1]
+* Often times only has one of two public methods: `data` or `query`
+  * This clues the reader into the what type of data the object returns
 
 ## Service Object
 
@@ -11,7 +13,6 @@
 * Can sometimes be found in a `/services` directory under app.
 * Usually start with a verb to clue the reader into the action.
 * Returns data over a simple boolean.
-* 
 
 ## Value Object
 
@@ -22,3 +23,11 @@
   * This equality should be determined by the object's attributes.
 
 ## Form Object
+
+* Least favorite of all these abstractions.
+* Usually used when the controller or service needs to talk to the DB.
+* VERY popular when wanting to remove validations from Rails models.
+* Seemingly much more useful when a form updates multiple or many models.
+* Again if using rails, these usually mixin `ActiveModel::Model`.
+
+[1]: /ActiveRecordQuery#best-practices
