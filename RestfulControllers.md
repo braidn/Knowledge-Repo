@@ -1,3 +1,5 @@
+# Restful Controllers
+
 ##Notes
 
 * You have seven default actions, and in every one of them you do the following:
