@@ -29,6 +29,8 @@ an entry point is pretty common.
 * `++` concats two lists together. Each side of the operator must be a list though
   * this can be expensive because it has to walk the entire length of the prepending list.
 * `::` is a cons operator and will therefore add the item to the left of the op to the list on the right.
+  * example: in a case statement of a list we could use `x::xs` to assign `x` to a single val and `xs` to the rest of the list.
+  * This is actually a super common pattern.
 * There are some handy methods built into `List`:
   * `List.head list` returns the first element of the list
   * `List.tail list` returns all but the first element of the list (opposite of above).
@@ -47,5 +49,19 @@ an entry point is pretty common.
 ## Types
 
 * Elm runs with type inference so no need to tell the compiler that an obvious Int is an Int
+* All types in Elm are denoted using Capital case (i.e.: `Float` or `Int`).
+* Type variables in Elm are written in non capital case (i.e.: `a`) and are of _any_ type.
+  * these are usually written as single char variables (`a`, `b`, etc)
+
+## Pattern Matching
+
+* Represented in the language in the form of case expressions.
+* Can be done on any data type.
+* The compiler will warn if their are cases not taken care of by the case.
+  * This can be taken care of by using the `_` wildcard op at the end of the statement.
+  * this operator is ALSO the throwaway parameter operator where we don't care about the parameter passed.
+* `let <binding> in <expression>` allows the programmer to bind anything to vars, even in expressions.
+  * anything assigned in the binding step will be accessible after the `in` declaration.
+
 
 [1]: https://wiki.haskell.org/Infix_operator
