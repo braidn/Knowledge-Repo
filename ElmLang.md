@@ -15,6 +15,8 @@ an entry point is pretty common.
   * An initial model, an initializer, a view function, an update function, and a subscriptions function.
   * An easier way of thinking about this: model, update, view.
 * Messages can pass from one module to another much like an event bus pattern.
+* Subscriptions are ways for the application to 'listen' to external input.
+  * This can be mouse/kb events or something like a Websocket event.
 
 ## General Syntax
 
