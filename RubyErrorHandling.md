@@ -7,6 +7,7 @@
 * Strait [Raising Exceptions][2]
 * [Catch-Throw Errors][3]
 * The entire method call is an implicit `begin; end` block so there is no need to write these keywords unless to be more specific.
+* `fail` is just an alias for `raise`
 
 
 ###Method Missing
