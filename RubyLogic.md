@@ -17,6 +17,7 @@
   * ex: `0.upto(7) do |I| ; puts I ; end`
 * `Begin` can be used as well as a bit of flow control
   * [Example][2]
+* Ruby's case statement is almost a direct lift from Pascals.
 
 [1]: /RubyForLoops
 [2]: /RubyBeginFlowControlExample
