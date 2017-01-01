@@ -1,7 +1,7 @@
 ```ruby
-I = 0
+var = 0
 begin
-  puts I
-  I += 1
+  puts var
+  var += 1
 end while I < 10
 ```
