@@ -1,3 +1,7 @@
+# Ruby Classes
+
+[[_TOC_]]
+
 ##Notes
 
 Classes are objects as well and due to that, they have instance methods...of sorts. Most of use the `.new` instance method a whole lot when creating new objects.
@@ -6,6 +10,7 @@ Classes are objects as well and due to that, they have instance methods...of sor
 * All class definitions are executable
 * Defined one method at a time
   * This would mean that if a method is defined twice in a class, the last instance would be the one that fires
+* The `initialize` method is always private.
 
 ###Overiding
 
