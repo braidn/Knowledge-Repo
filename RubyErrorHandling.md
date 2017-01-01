@@ -1,3 +1,7 @@
+# Ruby Error Handling
+
+## Notes
+
 * [Ensure Clause][0]
 * [Retry Clause][1]
 * Strait [Raising Exceptions][2]
