@@ -11,6 +11,7 @@
 * `While` and there opposite brothers the `Until`
   * Can be composed to do some powerfully concise things:
   * ex: `perform_stuff() until finished?` or `perform_stuff() while not finished?`
+  * the `redo` method can also be used here, jumping back to the beginning of loop body.
 * `Times` is used to do something `n.times`.
 * `Upto(n)` is somewhat like `times`.
   * ex: `0.upto(7) do |I| ; puts I ; end`
