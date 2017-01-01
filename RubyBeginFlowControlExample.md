@@ -3,5 +3,5 @@ var = 0
 begin
   puts var
   var += 1
-end while I < 10
+end while var < 10
 ```
