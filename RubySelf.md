@@ -1,5 +1,8 @@
-Otherwise known as the current or default object
+# Ruby Self
 
+## Notes
+
+* Otherwise known as the current or default object
 * Best way to track self is which object was last method receiver.
 * Self is automatically set to object main.
   * This is often times called the top level context or top level of the call stack
