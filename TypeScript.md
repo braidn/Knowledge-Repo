@@ -40,6 +40,18 @@ interface Food {
 * Explicit 'return' values are required/helpful in Generics.
 * Providing a type in the generic function call isn't required but, good practice.
 
+## Modules
+
+* These are not built in but, hook into external libraries.
+* For the browser, require.js is used and
+* For the server, CommonJS is used
+* Lot's of issues here might be cleaned up by TypeScript 2.0
+
+## Third Party Interops
+
+* To do this, a declaration file will need to be written and suffixed with `.d.ts`
+* Many of these already exist for popular projects at [DefinitelyTyped][2] and [Typings][3]
+
 ## Common Types
 
 * **Number** – All numeric values are represented by the number type, there aren’t separate definitions for integers, floats or others.
@@ -50,3 +62,5 @@ interface Food {
 * **Void** – Used on function that don’t return anything.
 
 [1]: http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+[2]: http://definitelytyped.org/
+[3]: https://github.com/typings/typings
