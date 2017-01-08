@@ -32,11 +32,11 @@ interface Food {
 
 ## Common Types
 
-* Number – All numeric values are represented by the number type, there aren’t separate definitions for integers, floats or others.
-* String – The text type, just like in vanilla JS strings can be surrounded by ‘single quotes’ or “double quotes”.
-* Boolean – true or false, using 0 and 1 will cause a compilation error.
-* Any – A variable with this type can have it’s value set to a string, number, or anything else.
-* Arrays – Has two possible syntaxes: my_arr: number[]; or my_arr: Array<number>.
-* Void – Used on function that don’t return anything.
+* **Number** – All numeric values are represented by the number type, there aren’t separate definitions for integers, floats or others.
+* **String** – The text type, just like in vanilla JS strings can be surrounded by ‘single quotes’ or “double quotes”.
+* **Boolean** – true or false, using 0 and 1 will cause a compilation error.
+* **Any** – A variable with this type can have it’s value set to a string, number, or anything else.
+* **Arrays** – Has two possible syntaxes: my_arr: number[]; or my_arr: Array<number>.
+* **Void** – Used on function that don’t return anything.
 
 [1]: http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
