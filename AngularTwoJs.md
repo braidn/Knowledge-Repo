@@ -13,7 +13,7 @@
 
 ### Debugging
 
-* TypeScript has source maps but must be turned on in the `.tsconfig` file.
+* [[TypeScript]] has source maps but must be turned on in the `.tsconfig` file.
   * this is handy when using a `debugger` call and viewing the file as .ts versus .js
 * [Augury][1] is a great extension for viewing the visual component tree of an Angular2 app.
 * Angular2 does not have the same kind of `$log` service as Ang1
