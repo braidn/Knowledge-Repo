@@ -30,6 +30,16 @@ interface Food {
   * however, properties and methods come over into the extended classes.
   * a `super(params)` method is available to call the constructor on the extended class.
 
+## Generics
+
+* Templates that allow the same functions to receive different types.
+* These preserve the type of data/vars that flow in and out of them.
+  * ex `function genericArrCreator<T>(argument: T): T[] {}`
+  * to use: `var genericNumbArr = genericArrCreator<number>(23)`
+  * the `T` var above can be anything but T for 'type' makes sense
+* Explicit 'return' values are required/helpful in Generics.
+* Providing a type in the generic function call isn't required but, good practice.
+
 ## Common Types
 
 * **Number** – All numeric values are represented by the number type, there aren’t separate definitions for integers, floats or others.
