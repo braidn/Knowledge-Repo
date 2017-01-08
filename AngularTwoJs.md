@@ -9,6 +9,7 @@
   * Two that are particularly important are `Component` and `Template`
 * Constructor functions often times ask Angular to instantiates the dependencies and types.
   * This is actually not dependency injection but IoC(Inversion of Control)
+* Each component has it's own scope over the previous Angular 1.5/6 shared scope.
 
 ### Templates
 
