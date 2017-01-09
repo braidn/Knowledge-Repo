@@ -1,1 +1,1 @@
-[[TypeScript _TOC_]]
+[[_TOC_]]
