@@ -5,3 +5,8 @@
 .SyncArchive/
 .SyncArchive/*
 .bundle
+tags
+tags.lock
+tags.temp
+tags/
+tags/*
