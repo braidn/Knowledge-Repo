@@ -1,3 +1,2 @@
-## Sidebar
 
 [[_TOC_]]
