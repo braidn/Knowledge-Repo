@@ -10,6 +10,18 @@
 * Constructor functions often times ask Angular to instantiates the dependencies and types.
   * This is actually not dependency injection but IoC(Inversion of Control)
 * Each component has it's own scope over the previous Angular 1.5/6 shared scope.
+  * components in general in A2 resemble directives from the 1.x days.
+* System.js can be used to bootstrap an app and include it on an html page.
+
+### Components
+
+* This is becoming the building block of the web with these kinds of frameworks.
+* We define a tag that has some kind of special meaning to the angular application 
+  * this tag is usually named accordingly to it's function ex: `<weather></weather>`
+  * this is very similiar to what VueJs does with it's component/tag system.
+* Components have an annotation and a Class definition (usually both, rarely one or the other)
+  * the class definition here is very much a TypeScript class
+* They usually have a selector that names the new tag and a template string literal.
 
 ### Debugging
 
@@ -28,6 +40,7 @@
 * When using `[]` to surround an attribute it means that it is invoking 'data binding'.
   * If the attribute changes, it will be reflected immediately within the DOM.
   * Handy especially if an attribute is used to toggle specific CSS classes.
+* When getting the value from an element use the `#someReference.value`
 
 ### Pipes
 
