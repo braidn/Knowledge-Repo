@@ -48,6 +48,22 @@ interface Food {
 * For the server, CommonJS is used
 * Lot's of issues here might be cleaned up by TypeScript 2.0
 
+## Enums
+
+* A way to organize related values.
+* Seen in C# and Java but not really in JS/Ruby
+* All TypeScript enums are number based
+  * By default the numbering begins at 0 and increments by 1 (normal array)
+* Can be made as constants usign the `const` keyword before `enum`
+
+## Guard Types
+
+* Types used to guard control logic from firing if not `typeof` some defined type.
+* These types are often user defined.
+  * but can be `typeof` or `instanceof` but can be of type `null` or `undefined`
+* Null and undefined checks need to be setup through the `--strictNullChecks` flag
+  * otherwise they are considered valid values for __all__ types.
+
 ## Third Party Interops
 
 * To do this, a declaration file will need to be written and suffixed with `.d.ts`
