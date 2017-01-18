@@ -22,6 +22,12 @@
 * Components have an annotation and a Class definition (usually both, rarely one or the other)
   * the class definition here is very much a TypeScript class
 * They usually have a selector that names the new tag and a template string literal.
+* A components 'host' is the element that the component is attached to. 
+  * This is often times the name of `selector` portion of the component's declaration.
+* Unlike A1, directives don't match globally. This means we need to explicitely add them.
+* This is done using the `directives: [DirectiveComponent]` property to the parent components.
+* It is always a good thing to try and isolate data structures from the component code.
+* Just like with most MVC structures, we want to move most of the logic out of components and into class/models
 
 ### Debugging
 
@@ -41,6 +47,12 @@
   * If the attribute changes, it will be reflected immediately within the DOM.
   * Handy especially if an attribute is used to toggle specific CSS classes.
 * When getting the value from an element use the `#someReference.value`
+
+### Template Tags
+
+* `#someValue`: called a resolve and used to bind a piece of markup to a variable.
+  * these are actually considered objects so they come with a bunch of fun methods.
+  * in typescript land these are usually of type HTMLInputElement or HTML something.
 
 ### Pipes
 
