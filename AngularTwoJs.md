@@ -28,6 +28,14 @@
 * This is done using the `directives: [DirectiveComponent]` property to the parent components.
 * It is always a good thing to try and isolate data structures from the component code.
 * Just like with most MVC structures, we want to move most of the logic out of components and into class/models
+* An *ngFor directive can be used to create multiples of the component in it's declaration.
+
+#### Inputs or 'Props'
+
+* Inputs that are passed to a component from its' parent.
+* written like: `<componentName [inputName]="value">`
+* The name goes into the component definition, not the class.
+  * These are arrays so a component can be passed any # of inputs.
 
 ### Debugging
 
