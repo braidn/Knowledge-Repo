@@ -6,6 +6,12 @@
 * Programmers often assume everyone knows all the things they do
 	* counteracting this leads to readable code
 
+###Universal Truths
+
+Very few of these across programming languages.
+
+1. Minimize Mutable State.
+
 ##Refactoring
 
 * Best place to start is within blocks that are deeply nested
