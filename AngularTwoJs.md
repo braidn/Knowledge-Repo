@@ -62,6 +62,21 @@
 * No specific model library is provided by A2 which is actually pretty bizarre.
   * due to this fact, it's common to start out with simple POJOs.
 
+### Form Control
+
+* Forms and form flow can be hairy beasts. A2 has some helpful items to tame this.
+  1. Form controls: encapsulates forms into manageable objects
+  1. Validators: Validate input to the form control objects
+  1. Observers: Just like observers mentioned in Data Architecture.
+* FormControl is a class that wraps a single form element.
+  * `formControl` is the directive that's used in the DOM.
+* FormGroup wraps these control elements into a logical collection.
+* When injecting NgForm, ngForm get's bound to all form tags automatically.
+  * This can likely be good for an A2 heavy team or a complete nightmare. Likely nightmare.
+* This automatic binding to `form` when including forms gives us two things:
+  1. a FormGroup called: `ngForm`
+  1. an `ngSubmit` output
+
 ### Data Architecture
 
 * A1 used Two Way data binding that became incridbly laborious as the application grew.
