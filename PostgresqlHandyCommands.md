@@ -1,4 +1,5 @@
 #PSQL Handy Commands
+
 ###CLI
 
 * `sudo -u {postgres|$WHOAMI} createdb my_site`: create a db
