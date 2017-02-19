@@ -12,6 +12,7 @@
 * Each component has it's own scope over the previous Angular 1.5/6 shared scope.
   * components in general in A2 resemble directives from the 1.x days.
 * System.js can be used to bootstrap an app and include it on an html page.
+* When adding scripts/css to an Angular CLI project, make sure to add to the `.angular-cli.json` file.
 
 ### Components
 
