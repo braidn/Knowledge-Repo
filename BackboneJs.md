@@ -1,3 +1,5 @@
+# BackboneJS
+
 ## Reasons to use Philosophy.
 
 * Avoids tying the application to the state of the dom.
