@@ -15,6 +15,10 @@
 * When adding scripts/css to an Angular CLI project, make sure to add to the `.angular-cli.json` file.
   * This tells Angular what to compile in the final bundle.
 
+### Patterns
+
+* The two way data bindings have changed but, overall a lot of the patterns are interoperable between NG1/NG*
+
 ### Components
 
 * This is becoming the building block of the web with these kinds of frameworks.
