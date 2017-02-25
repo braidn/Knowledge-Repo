@@ -21,7 +21,11 @@
 ## Whitefox
 
 * [Recently purchased][2] 65% board from matt3o
-* Programming either done through the [input.club][3] or [TMK][4]
+* Programming through [QMK][4]
+  * When using make to build the keymap, the hex will be sent to the root dir.
+  * Unfortunately the keyboard _only_ is programmed using a `.bin` file.
+  * This `.bin` can be found in the .build folder of the root QMK dir.
+  * Use this file with: `dfu-util -D .build/whitefox_braden.bin -S whiteFoxSerial`
 
 ## Atreus
 
@@ -37,7 +41,7 @@
 
 * HHKB, Ergodox, Planck, Alps64 has been moved to the [QMK Fork of TMK][1]
 
-[1]: https://github.com/jackhumbert/qmk_firmware
+[1]: https://github.com/qmk/qmk_firmware
 [2]: https://www.massdrop.com/buy/the-whitefox-keyboard?quest-mode=open
 [3]: http://input.club/configurator
 [4]: https://github.com/tmk/whitefox
