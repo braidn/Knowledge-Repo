@@ -122,4 +122,8 @@
 * Ways to move data throughout transforms (think Unix pipes).
 * Can also be thought of as Angular1 'Filters'.
 
+### Testing
+
+* The only items that should be tested in isolation are #pipes and #services
+
 [1]: https://augury.angular.io
