@@ -20,7 +20,6 @@
 
 ## Whitefox
 
-* [Recently purchased][2] 65% board from matt3o
 * Programming through [QMK][4]
   * When using make to build the keymap, the hex will be sent to the root dir.
   * Unfortunately the keyboard _only_ is programmed using a `.bin` file.
