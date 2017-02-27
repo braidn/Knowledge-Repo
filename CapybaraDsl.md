@@ -8,6 +8,11 @@ The language that you use to match items with Rspec and Cucumber
 * more readable DSL docs can be found: [here][1]
 * If completely lost `save_and_open_page` to see what is being rendered
 
+## Waiting
+
+* Use `synchronize` over waits
+  * ex: `page.document.synchronize do ; end`
+
 ## Clicking Tips
 
 * When there is no text to click on, use a scope like: `find('.some-class').click` 
