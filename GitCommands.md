@@ -1,5 +1,8 @@
 ### Most Used Commands
 
+* Remove a commit: `git rebase -i sha_to_be_removed~1`
+  * This will open a rebase up to the commit you want removed (will be top of list)
+  * if this is done on a merge bubble, all of the bubble will be expanded with all commits, not just one.
 * Checkout and track remote repo: `git checkout -t origin/branchName`
 * Delete remote branch: `git push origin :branchName`
 * Rename a branch: `git branch -m <branch_you_want_to_rename> <new_name>`
