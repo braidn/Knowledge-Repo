@@ -5,7 +5,8 @@
 * Components can be thought of as their own little isolated systems.
   * They have their own state, input and output.
 * Using `props.children` we can keep our composed functions agnostic and dependency free.
- * this is due to pretty much anything be able to be passed down through props.
+  * this is due to pretty much anything be able to be passed down through props.
+* If we need to get reference to a DOM element there is the [`ref` keyword][2]
 
 ###Higher-order Components
 
@@ -22,7 +23,8 @@
 * [Context][1] or contexts act like event bus for data throughout different components.
   * these need to be specified exactly using `childContextTypes` and `contextTypes`.
   * due to that, using contexts can be somewhat unwieldy.
-  * to get around the unwieldiness, use a POJO that has a get and register function to add items to a JS object. Then pass this interface into the contextTypes and it should make dealing with them much easier.
+  * to get around the unwieldiness, use a POJO that has a get and register function to add items to a JS object. 
+  Then pass this interface into the contextTypes and it should make dealing with them much easier.
 
 ###One-way Data Flow
 
@@ -34,3 +36,4 @@
 
 
 [1]: https://facebook.github.io/react/docs/context.html
+[2]: https://facebook.github.io/react/docs/refs-and-the-dom.html
