@@ -12,6 +12,9 @@
 
 ### Diffing
 
+* If you need to omit files from a git diff:
+  1. `git config diff.nodiff.command /bin/true` the `--global` flag can be used if needed globally
+  1. add: `irrelevant.file_name    diff=nodiff` lines to .git/info/attributes
 * If two buffers are open they can be diffed by performing:
   * `windo.diffthis` and turned off with `windo.diffoff`
 
