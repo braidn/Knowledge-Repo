@@ -12,6 +12,7 @@
   * this will almost always mean using data stubs until you get to the outer most content.
 * Components have a `render()` function that creates an intermediate-DOM (HTML output)
   * this is a requirement for all components.
+  * this _must_ return a single, root element. (wrap stuff in single divs)
 * Calling `renderComponent()` on the root of the tree will recursively build its' entire DOM
 * Components are created by creating a: `React.createClass` object
 * `this.props.name` is used to read the name property passed into the creation of the class (_input_).
@@ -27,6 +28,16 @@
   * `this.props.children`. 
   * This also means that children is a bit of a keyword and shouldn't be used to name props
 * The proper way of retrieving information from the children is by using props (passing callbacks)
+
+####Container Components
+
+* Only deal with logic required to generate presentation components.
+  * 'logic' mentioned here is the data (state) and functionality/behavior (events).
+* These are often time's classes that are extended from the component class.
+* Bind presentation components with a store of some type.
+  * this could be redux/relay/flux/etc
+* Container components themselves should subscribe to these store objects.
+  * due to this, one might have to manually call the subscribe/unsubscribe during the component lifecycle functions.
 
 ###DOM Sync
 

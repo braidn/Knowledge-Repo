@@ -7,6 +7,7 @@
 * Using `props.children` we can keep our composed functions agnostic and dependency free.
   * this is due to pretty much anything be able to be passed down through props.
 * If we need to get reference to a DOM element there is the [`ref` keyword][2]
+* Extracting components into their smallest possible state will lead to more and more testability.
 
 ###Higher-order Components
 
