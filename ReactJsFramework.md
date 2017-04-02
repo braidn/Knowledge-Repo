@@ -79,6 +79,7 @@
 
 ###Testing
 
+* [React Testing][3]
 * When testing composed components, make sure to shallow render. This will render the component but not it's children. Otherwise tests can and will get pretty heavy.
 
 ###External links
@@ -87,3 +88,4 @@
 
 [1]: http://davidwalsh.name/event-delegate
 [2]: http://facebook.github.io/react/docs/getting-started.html
+[3]: /ReactTesting
