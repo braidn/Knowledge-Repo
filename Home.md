@@ -7,5 +7,5 @@
 
 <<GlobalTOC()>>
 
-[1]: https://trello.com/b/kihdVcCZ/learning
-[2]: https://trello.com/b/zQdvWjpo/reading
+[1]: https://github.com/braidn/betterment
+[2]: https://github.com/braidn/reading-list
