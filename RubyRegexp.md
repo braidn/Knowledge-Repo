@@ -11,3 +11,4 @@
 * `$` the exact opposite of the ^. These two are very reminiscent of the vim key bindings 
 * In Ruby2.4, `.match?` is implemented to return just a boolean.
   * It does not allocate memory at `$ ~` for match data(drastically speeding things up)
+* Fully Unicode aware. They match characters rather than bytes.
