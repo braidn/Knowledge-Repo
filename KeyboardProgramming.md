@@ -8,9 +8,10 @@
 
 ## HHKB
 
-* creating a keymap: `make braden dfu` 
-* cleaning: `Makefile clean`
-* The dfu option will auto upload the keymap to the keyboard
+* creating a keymap: `make braden` 
+* cleaning: `make clean`
+* This command resets the firmware: `dfu-programmer atmega32u4 erase`
+* and this command uploads the new firmware: `dfu-programmer atmega32u4 flash fileofyourfirmware.hex`
 * The switch to put the keyboard into boot loader mode is where the dip switch used to be.
 
 ## Alps64
