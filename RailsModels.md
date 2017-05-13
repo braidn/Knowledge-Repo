@@ -19,6 +19,7 @@
   * ex: `someModel.serializable_hash`
 * `Delegate` has been a great way to delegate methods to another class.
   * In Rails 5.1, the `delegate_missing_to @klass` was added to delegate everything to the other class.
+* ActiveModel gives us a handy way to alias_method AR attributes: `alias_attribute :new, :old`
 
 ### Scopes
 
