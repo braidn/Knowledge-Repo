@@ -53,3 +53,4 @@
 [2]: https://www.massdrop.com/buy/the-whitefox-keyboard?quest-mode=open
 [3]: http://input.club/configurator
 [4]: https://github.com/tmk/whitefox
+[docker]: http://localhost:4567/KeyboardProgramming#dockerized-qmk-make
