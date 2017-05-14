@@ -47,7 +47,7 @@
 
 ## Notes
 
-* HHKB, Ergodox, Planck, Alps64 has been moved to the [QMK Fork of TMK][1]
+* All keyboards have been moved to the [QMK Fork of TMK][1]
 
 [1]: https://github.com/qmk/qmk_firmware
 [2]: https://www.massdrop.com/buy/the-whitefox-keyboard?quest-mode=open
