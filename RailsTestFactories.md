@@ -1,4 +1,8 @@
-###Details
+#Rails Test Fixtures
+
+##Factory Girl
+
+###Notes
 
 * Instead of specifying your data directly, you build a blueprint that will construct your slice of data
 * Three really popular gems in order:
@@ -30,7 +34,11 @@
 * Written like: `association :attributeName, :factory => :factoryName, :overidingValue => "Stuff"`
 * When calling the factory and you __don't__ want/need the association, call `nil` on it
 
+###Speeding Up Tests
 
+* Look to use `build_stubbed` whenever possible.
+  * It creates a lightweight object that is very familiar to the ActiveRecord representation.
+  * It won't react to AR finders though so, basically useful in unit tests.
 
 [0]: /RailsTestFactoriesSequenceExample
 [1]: /RailsTestFixtures
