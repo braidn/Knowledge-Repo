@@ -1,3 +1,5 @@
+#Ruby Procs
+
 ###Notes
 
 * On a basic level, it is a way to store methods in a variable.
@@ -15,3 +17,8 @@ Javascripty in my mind.
   * Although the norm is to use `do` and `end` with multiple line blocks and `{}` on single line blocks
 * parameters are called between the pipes like: `lambda {|para1, para2|}`
   * and passed after the `.call` method in parens separated by commas
+
+###Performance
+
+* It is common for someone to create a proc and call a method with it versus yielding to an enumerator in a block.
+  * This is somewhat more elegant but, since Proc's are Objects, the proc method is much slower.
