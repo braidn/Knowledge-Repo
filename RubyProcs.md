@@ -22,3 +22,5 @@ Javascripty in my mind.
 
 * It is common for someone to create a proc and call a method with it versus yielding to an enumerator in a block.
   * This is somewhat more elegant but, since Proc's are Objects, the proc method is much slower.
+  * This also aligns nicely with the idea that Ruby is not Javascript...
+    * so we have blocks, use them and avoid passing around functions indiscriminately. 
