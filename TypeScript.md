@@ -6,6 +6,8 @@
 * Types, like in most modern type based languages, are optional and inferred by the compiler.
 * ALMOST always a `tsconfig.json` config file is required in the root directory of the project.
  * [docs for the tsconfig file][1]
+* A glob param can be used. This is much like Ruby and will process the param as an array.
+  * ex: `function manyParams(param1, param2, ...allTheRest) { console.log(allTheRest) }`
 
 ## Interfaces
 
@@ -31,6 +33,24 @@ interface Food {
   * however, properties and methods come over into the extended classes.
   * a `super(params)` method is available to call the constructor on the extended class.
   * super must be used when extending a class. TypeScript will warn you if this doesn't occur.
+
+###Subclassing
+
+* Like many OO based languages, TS has private, public and protected properties
+* Because property declaration and setting is so common it can be shorthanded in the constructor:
+  * `constructor(public x:number) { }`
+  * this allows the class to set x on instantiation and axxess it using `this.x`
+* Member properties are not accessed in child classes using `super`.
+  * Instead, `this.property` is used.
+* Due to `this` being the context of the function invocation, using `this` to access parent methods can be weird.
+  * Problems here can be mitigated by creating a copy of the parent method before overriding it.
+  * It's very similiar how one used to capture context using `_self = this`.
+
+###Statics
+
+* Static properties are shared across all instances of a class.
+* They act very much like singletons.
+* Created using the `static` keyword and accessed like all other properties.
 
 ## Generics
 
