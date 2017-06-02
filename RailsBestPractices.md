@@ -1,6 +1,6 @@
-##General
+# Rails Best Practices
 
-###Controllers
+##Controllers
 
 * Some people feel like instance methods should ONLY be declared in "action blocks"
 	* this would mean that anything under private/protected would be a no-no
@@ -19,7 +19,7 @@
 	* instead of being fired in a hidden field in a form
 	* this is for security reasons: users can't assign forms to other users
 
-###Presenters
+##Presenters
 
 * Used to abstract unweildy and instance variable rich controller actions
 * Sometimes an additional load path is needed if using a separate var
@@ -29,7 +29,7 @@
 	* presenters are heavy users of ActiveSupport::Memoizable due to their heavy caching
 * [More][1]
 
-###Models
+##Models
 
 * When dealing with scopes, remember Rails makes them a method on runtime
 	* this will cause wheres with time to never change after they are first run
@@ -37,5 +37,10 @@
 	every time the method is fired
 * When dealing with SQL, always use the `?` syntax to escape user input
  * passing hashes or symbols that relate to hashes is as safe as the `?` op
+
+##Config
+
+* Internally, the `DATABASE_URL` is used to map to a rails application.
+  * if this is set in the environment, assigning db name, host, port is irrelevant in database.yml
 
 [1]: /RailsPresenters
