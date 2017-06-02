@@ -30,6 +30,7 @@ interface Food {
   * when extending a class, a new `constructor` or redefined one is required.
   * however, properties and methods come over into the extended classes.
   * a `super(params)` method is available to call the constructor on the extended class.
+  * super must be used when extending a class. TypeScript will warn you if this doesn't occur.
 
 ## Generics
 
