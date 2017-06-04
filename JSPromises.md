@@ -12,6 +12,12 @@
   * Looking up issues
 * This feature relies heavily on _all_ functions returning a Promise.
   * This means that all external libs will need to implement these versus callbacks.
+* Generators, and generator style functions are what allows us to use async/await.
+
+###Generators
+
+* easy way to build a generator: `const foo = promiseWrap(function* () => {})`
+* the `function*` is the keyword that builds the generator
 
 ## Examples
 

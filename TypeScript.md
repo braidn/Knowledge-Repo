@@ -8,6 +8,8 @@
  * [docs for the tsconfig file][1]
 * A glob param can be used. This is much like Ruby and will process the param as an array.
   * ex: `function manyParams(param1, param2, ...allTheRest) { console.log(allTheRest) }`
+* Tagged templates are a great way to build functions that pre process string literals.
+* The spread operator or `...someList` is totally usable throughout TS.
 
 ## Interfaces
 
@@ -33,13 +35,13 @@ interface Food {
   * however, properties and methods come over into the extended classes.
   * a `super(params)` method is available to call the constructor on the extended class.
   * super must be used when extending a class. TypeScript will warn you if this doesn't occur.
+* Because property declaration and setting is so common it can be shorthanded in the constructor:
+  * `constructor(public x:number) { }`
+  * this allows the class to set x on instantiation and axxess it using `this.x`
 
 ###Subclassing
 
 * Like many OO based languages, TS has private, public and protected properties
-* Because property declaration and setting is so common it can be shorthanded in the constructor:
-  * `constructor(public x:number) { }`
-  * this allows the class to set x on instantiation and axxess it using `this.x`
 * Member properties are not accessed in child classes using `super`.
   * Instead, `this.property` is used.
 * Due to `this` being the context of the function invocation, using `this` to access parent methods can be weird.
@@ -51,6 +53,19 @@ interface Food {
 * Static properties are shared across all instances of a class.
 * They act very much like singletons.
 * Created using the `static` keyword and accessed like all other properties.
+
+## Destructuring
+
+* Works very similiar to other languages:
+  * ex: `let tangle = { x: 0, y: 10, width: 5 }; let { x, y, width } = tangle`
+  * variables x, y, and width are now set.
+* Deep destructuring is also completely valid:
+  * ex: `let foo = { bar: { baz: 10 } }; let { bar: { baz } } = foo`
+  * baz is now set and available.
+* Array destructuring is also completely doable:
+  * ex: `[x, y] = [ y, x ]`
+  * using the splat op: `...theRest`, you can assign the remainder of the array to a new array
+  * ignoring an index is completely doable by leaving the item empty when using destructuring.
 
 ## Generics
 
@@ -84,6 +99,11 @@ interface Food {
   * but can be `typeof` or `instanceof` but can be of type `null` or `undefined`
 * Null and undefined checks need to be setup through the `--strictNullChecks` flag
   * otherwise they are considered valid values for __all__ types.
+
+## Async/Await
+
+* This has been available for es6 targets since 1.7
+  * es5/es3 was added in TS 2.1
 
 ## Third Party Interops
 
