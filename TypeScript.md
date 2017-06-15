@@ -79,10 +79,19 @@ interface Food {
 
 ## Modules
 
+* Commonly using the `export` keyword will create a namespace.
+  * This means that `import` can be used to pull modules into other files.
 * These are not built in but, hook into external libraries.
 * For the browser, require.js is used and
 * For the server, CommonJS is used
 * Lot's of issues here might be cleaned up by TypeScript 2.0
+
+## Namespacing
+
+* TS offers the `namespace` keyword to contain a logical group of functions.
+  * ex: `namespace Utility { export function someFunc(someParams) }`
+  * the above could be called using: `Utility.log('hello')`
+* Namespacing can be nested allowing for all kinds of buckets.
 
 ## Enums
 
