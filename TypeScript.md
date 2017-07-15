@@ -99,6 +99,7 @@ interface Food {
 * Seen in C# and Java but not really in JS/Ruby
 * All TypeScript enums are number based
   * By default the numbering begins at 0 and increments by 1 (normal array)
+  * assignment is allowed in the definition though and allows and enum value any valid number
 * Can be made as constants usign the `const` keyword before `enum`
 
 ## Guard Types
@@ -119,7 +120,13 @@ interface Food {
 * To do this, a declaration file will need to be written and suffixed with `.d.ts`
 * Many of these already exist for popular projects at [DefinitelyTyped][2] and [Typings][3]
 
-## Common Types
+## Types
+
+* Either created using interfaces or the `type` keyword
+  * example: `type StrNumb = string|number`
+* Type aliases can be created wherever and are preferable when using simpler objects.
+
+### Common Types
 
 * **Number** – All numeric values are represented by the number type, there aren’t separate definitions for integers, floats or others.
 * **String** – The text type, just like in vanilla JS strings can be surrounded by ‘single quotes’ or “double quotes”.
@@ -127,6 +134,25 @@ interface Food {
 * **Any** – A variable with this type can have it’s value set to a string, number, or anything else.
 * **Arrays** – Has two possible syntaxes: my_arr: number[]; or my_arr: Array<number>.
 * **Void** – Used on function that don’t return anything.
+
+### Union Types
+
+* Denoted using the `|` operator.
+* Used to denote the types that are allowed to a param/func.
+  * Handy if your function can take a single item or array of items.
+
+### Intersection Type
+
+* Handy when using `extend` to smash two objects together.
+* This type is written like: `function something<T, U>(first: T, second: U) {}`
+* Lots of safety here especially when using several intersecting interfaces.
+
+### Tuple Type
+
+* JS has no knowledge of tuples however, this type hacks it under the hood using arrays.
+  * example: `let myTuple: [string, number]; myTuple = ['braden', '22']`
+* Handy, especially when thinking about destructuring.
+  * `let [name, age] = myTuple`
 
 [1]: http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 [2]: http://definitelytyped.org/
