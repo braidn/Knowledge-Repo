@@ -32,17 +32,6 @@
   * This `.bin` can be found in the .build folder of the root QMK dir.
   * Use this file with: `dfu-util -D .build/whitefox_braden.bin -S whiteFoxSerial`
 
-## Atreus
-
-* Use QMK to build the keymap and house the keymap.
-* Use avrdude to flash the hex file which is found at the QMK repo root.
-* There is a trick where the computer shows up under /dev when in programming mode.
-  * The keyboard needs to be put into boot loader mode and
-  * then tab to the correct item under /dev
-* The keyboard will stay in boot loader mode for not a lot of time so it will have to be quick.
-* An example command would be: `avrdude -p atmega32u4 -P /dev/tty.usbmodem1421 -c avr109 -U flash:w:atreus62_braden.hex`
-* This keyboard has been traded away.
-
 ## Dockerized QMK Make
 
 * Create a hex file using the qmk/docker image:
