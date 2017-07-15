@@ -20,6 +20,12 @@
 
 ## Whitefox
 
+* Building .bin's at the moment is a little tricky with the current QMK makefile.
+* To get around these issues:
+  * Start a docker container: `docker run -d -t -i -e subproject='' -v $('pwd'):/qmk:rw jackhumbert/qmk_firmware bash`
+  * Attach to the newly running container.
+  * run: `make whitefox-braden-whitefox-braden.bin`  
+  * Exit from the container and run the dfu-util command
 * Programming through [QMK][4]
   * When using make to build the keymap, the hex will be sent to the root dir.
   * Unfortunately the keyboard _only_ is programmed using a `.bin` file.
