@@ -109,6 +109,9 @@ interface Food {
   * but can be `typeof` or `instanceof` but can be of type `null` or `undefined`
 * Null and undefined checks need to be setup through the `--strictNullChecks` flag
   * otherwise they are considered valid values for __all__ types.
+* These are also aware of the `if` and `else` JS syntax.
+  * This means that if we are typechecking in an else block, 
+  it know's what params are required due to comparing against the if condition
 
 ## Async/Await
 
@@ -125,6 +128,9 @@ interface Food {
 * Either created using interfaces or the `type` keyword
   * example: `type StrNumb = string|number`
 * Type aliases can be created wherever and are preferable when using simpler objects.
+* Optional params can be marked by adding a `?` to the end of the param's name
+  * what's cool is this means we can also add default values in much the same way: `bas : string = 'hello'`
+  * and because types are building documentation, we can use method overloading with optional params.
 
 ### Common Types
 
@@ -153,6 +159,28 @@ interface Food {
   * example: `let myTuple: [string, number]; myTuple = ['braden', '22']`
 * Handy, especially when thinking about destructuring.
   * `let [name, age] = myTuple`
+
+### Method Overloading
+
+* More for documentation anything.
+* All possible params to the function are defined in the func header with no func block
+* The last or fallthrough func definition contains the func block that will fire for all of the func defined as 'headers'
+* There is also _no runtime overhead_ to overloaded funcs, it's all for the compiler
+
+### Literal Types
+
+* ex: `let bar: 'Hello'`
+  * in the above, the variable bar can only ever be assigned to the string Hello.
+* This is super powerful when combining with type unions because it creates a list of accepted values passable to the func.
+* Boolean and numbers can be used in this same fashion.
+
+### Readonly
+
+* Properties throughout any interface and class can be marked as `readonly`
+  * ex: `config: { readonly stripe_key: string }`
+* These readonly attributes are immune (blocked by the interpreter) from being mutated.
+  * In a kind of way this is a bit of free immutability without another library. 
+* TS has a built in interface for Arrays called: `ReadonlyArray<T>` which will automatically create read only arrays
 
 [1]: http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 [2]: http://definitelytyped.org/
