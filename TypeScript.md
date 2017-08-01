@@ -10,6 +10,9 @@
   * ex: `function manyParams(param1, param2, ...allTheRest) { console.log(allTheRest) }`
 * Tagged templates are a great way to build functions that pre process string literals.
 * The spread operator or `...someList` is totally usable throughout TS.
+* `Bind` is pretty harmful since it always returns an any.
+* Currying can be achieved with ease by chaining fat arrows:
+  * ex: `let add = (x: number) => (y: number) => x + y;`
 
 ## Interfaces
 
@@ -38,6 +41,7 @@ interface Food {
 * Because property declaration and setting is so common it can be shorthanded in the constructor:
   * `constructor(public x:number) { }`
   * this allows the class to set x on instantiation and axxess it using `this.x`
+* Classes while poo pooed by most JS devs, are really quite useful and create well thought out wrappers around functions.
 
 ###Subclassing
 
@@ -181,6 +185,14 @@ interface Food {
 * These readonly attributes are immune (blocked by the interpreter) from being mutated.
   * In a kind of way this is a bit of free immutability without another library. 
 * TS has a built in interface for Arrays called: `ReadonlyArray<T>` which will automatically create read only arrays
+
+### Never Type
+
+* A base case, or sometimes called a bottom case.
+* Fails or error throwing is also considered an error case.
+* Void and Never are somewhat different:
+  * Void is a unit where Never is a falsesum
+  * A function that returns nothing will always be a Void.
 
 [1]: http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 [2]: http://definitelytyped.org/

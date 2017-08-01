@@ -1,10 +1,15 @@
 # Elm
 
+## Notes
+
 * Compiled language that kinda looks like coffeescript.
 * Highly functional, taking a lot of tenants from Haskell.
 * Due to the compilation, a `Main.elm` and an `Main` function as 
 an entry point is pretty common.
 * One of the largest differences from Elm to Haskell is Elm is eager where Haskell is lazy
+* The VirtualDom actually calls out to JS's native VDOM
+* Frontend work can be tricky to start but, when you have a simple framework it directs your start.
+  * lot's of Elm starts by defining a model, building the view, and creating messages that the view responds to.
 
 ## Conventions
 
@@ -18,11 +23,31 @@ an entry point is pretty common.
 * Subscriptions are ways for the application to 'listen' to external input.
   * This can be mouse/kb events or something like a Websocket event.
 
+## The Model
+
+### Notes
+
+* It's often normal to have an initialModel to be given to the app when it's launched/created
+
+## The View
+
+### Notes
+
+* Collection of functions that compose a virtual dom representation of the dom
+* The VirtualDom actually calls out to JS's native VDOM
+
+## The Update
+
+### Notes
+
+* Often times the initial update that's written will simply return the initial model.
+* Usually takes a msg, a model and returns a model (the updated model)
+
 ## General Syntax
 
 * `module` statement acts like a module exports in es6
 * `import` used to import modules and expose functions to the script.
-* Backticks(`) can be used to force a function to be [infix][1]
+* Backticks can be used to force a function to be [infix][1]
 * Like many Lisp like languages, function application is performed with spaces, not parens.
   * `bar 5 1` versus `bar(5, 1)`
 

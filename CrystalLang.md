@@ -3,6 +3,8 @@
 ## Notes
 
 * Comes with a built in test/spec framework. Used by `crystal spec someFile.cr`
+* Comes with a build in templating library called 'ecr'
+  * much like erb for Ruby.
 
 ## Testing
 
