@@ -27,3 +27,4 @@
 * `SELECT * from table`: return all rows, must first be connected
 * `DELETE FROM tableName;`: wipe a table clean
 * `select * from pg_stat_activity where datname='YourDatabase';` to list connections
+* `SELECT relation::regclass, * FROM pg_locks WHERE NOT GRANTED;` to check all items locking the db.
