@@ -1,4 +1,4 @@
-# Rspec Testing
+# RSpec Testing
 
 ## Request Specs.
 
