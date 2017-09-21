@@ -50,6 +50,9 @@ an entry point is pretty common.
 * Backticks can be used to force a function to be [infix][1]
 * Like many Lisp like languages, function application is performed with spaces, not parens.
   * `bar 5 1` versus `bar(5, 1)`
+* All functions are curryable by default.
+  * also known as 'partial applications' in the language
+  * Since the power of currying is all over the language, one has to weight composition over readability.
 
 ## Lists
 
