@@ -10,6 +10,7 @@ an entry point is pretty common.
 * The VirtualDom actually calls out to JS's native VDOM
 * Frontend work can be tricky to start but, when you have a simple framework it directs your start.
   * lot's of Elm starts by defining a model, building the view, and creating messages that the view responds to.
+* The not equal op, like most languages (`!=`) is actually: `/=`
 
 ## Conventions
 
@@ -22,6 +23,11 @@ an entry point is pretty common.
 * Messages can pass from one module to another much like an event bus pattern.
 * Subscriptions are ways for the application to 'listen' to external input.
   * This can be mouse/kb events or something like a Websocket event.
+
+## Functions
+
+* Anonymous or 'lambda' fn's start with a backslash
+  * ex: `\n -> n + 1`
 
 ## The Model
 
