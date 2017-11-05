@@ -1,3 +1,7 @@
+# Ruby Collections
+
+## Arrays
+
 * anything can be exploded to an array by passing a splat in front of it
   * like `[*c]`
   * this is the same as passing `Array(c)`
@@ -19,5 +23,12 @@ This can be easily done by the following:
   * values will omit the keys in the hash and the last map will return a sole selection from the newly minted array.
 * `itself` is a method on Kernel that can be used to `group_by` similar items.
   * Say group by a list of similar words: `%w[liger tiger cat tiger] => {'cat' => ['cat'], 'tiger' => ['tiger', 'tiger'] ... }`
+
+## Hashes
+
+### Notes
+
+* Ruby 2.4 introduces `transform_values` that iterates over each key and does something with the values.
+  * A method that was actually extracted from Rails.
 
 [1]: /RubyFalsey
