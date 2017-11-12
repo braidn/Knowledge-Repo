@@ -7,3 +7,8 @@
 * When shit's getting out of hand space wise (Docker's usurping all of it):
   * `docker system prune`
   * This command has some output/user interaction so it won't be run accidentally.
+
+## Ruby
+
+* When running an container with a volume, using bundle exec is highly recommended for all commands.
+  * ex: `docker-compose run --rm web bundle exec ruby ...`
