@@ -59,6 +59,11 @@ an entry point is pretty common.
 * All functions are curryable by default.
   * also known as 'partial applications' in the language
   * Since the power of currying is all over the language, one has to weight composition over readability.
+  * Often times written with type declarations above the function
+    * ex: `double : Int -> Int`
+  * Terminology when reading function declaration can be a little different.
+    * ex: `List.map : (a -> b) -> List a -> List b`
+    * is read as: 'List dot map has type a goes to b, goes to list of a, goes to list of b.'
 
 ## Lists
 
