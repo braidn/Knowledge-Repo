@@ -48,6 +48,7 @@ an entry point is pretty common.
 
 * Often times the initial update that's written will simply return the initial model.
 * Usually takes a msg, a model and returns a model (the updated model)
+* Can also be thought of as a list of messages that the view can send the program.
 
 ## General Syntax
 
