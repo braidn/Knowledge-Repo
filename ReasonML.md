@@ -16,6 +16,7 @@ A Javascript/OCaml ecosystem.
 * For and While loops are supported where needed.
   * This is likely in a few places due to the pattern matching power.
 * The language itself supports a form of JSX that's quite terse.
+  * This though can be easily levergaged by Reason-React
 
 ## Functions
 
