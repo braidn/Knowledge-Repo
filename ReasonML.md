@@ -144,6 +144,17 @@ A Javascript/OCaml ecosystem.
   * the spread operator helps us here: `let newMe = { ...me, age: me.age + 1 }`
   * The `mutable` keword can be used when defining a type to get around this.
 
+### Object
+
+* Looks very much like a record but has a dot(`.`) at the beginning:
+  * ex: `type toots{. position: integer};`
+* If a single dot is placed at the beginning, the object is 'closed'
+  * This simply means that any object based on this type must have _the same_ structure.
+* Objects can have two dot's (known as an 'elision').
+  * This denotes the object as open/polymorphic/or can contain other values.
+* May contain a `this` keyword which, unlike JS, points to the current object correctly.
+* Bucklescript also has a special object type that's different than Reasons (confusing).
+
 ### Tuple
 
 * Like a record (immutable) but, ordered, and fix sized.
