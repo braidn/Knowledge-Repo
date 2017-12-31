@@ -85,6 +85,17 @@ A Javascript/OCaml ecosystem.
 * Exceptions can be used throughout this process by using the `exception exception_name` pattern.
 * Throughout, this will be way more performant than if/elses.
 
+## Modules
+
+* Much like in every other language: Modules are a way to namespace and encapsulate code functunality.
+* One large Reason pattern is to have a main type per module with the name `t`
+  * ex: `SomeModule.t.someMethodOrVar`
+* Sometimes/often there is a make function that's sets up the module at runtime.
+  * this is not a Reason pattern but, an Ocaml one.
+  * also often called 'initialization' where a new version of something is created (OO baby!)
+* To pass these around we use the `open` keyword followed by the module namespace.
+  * This pulls all values from the module into the current scope (where `open`) was invoked.
+
 ## Data Structures
 
 ### Variant!
