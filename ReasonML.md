@@ -17,6 +17,9 @@ A Javascript/OCaml ecosystem.
   * This is likely in a few places due to the pattern matching power.
 * The language itself supports a form of JSX that's quite terse.
   * This though can be easily levergaged by Reason-React
+* The Bucklescript compiler is super smart and will remove unused code where needed.
+  * It will also inline function invocation if it can decern the output.
+  * All of this makes for heavy optimization in the JS output.
 
 ## Functions
 
@@ -24,6 +27,23 @@ A Javascript/OCaml ecosystem.
 * They can be either single line:
   * `let someFunc = (name) => "Hellow" ++ name `
   * or multiple lined using the block syntax
+* If a func has a single param and is defined by an identifier, 
+the parenthesis around the param can be omitted.
+* Mutually recursive functions are defined using the `and` keyword
+* There are no nullary functions in the language.
+  * The compiler will add a `unit` to a null func if defined.
+  * The reason here is Reason returns partial applications, much like Elm.
+* Some function signature rules:
+  * If a function has a single primary parameter, 
+  make it a positional parameter and put it at the end. 
+  That supports the pipe operator for function composition.
+  * Some functions have multiple primary parameters that are all similar. 
+  Turn these into multiple positional parameters at the end. 
+  An example would be a function that concatenates two lists into a single list. 
+  In that case, both positional parameters are lists.
+  * All other parameters should be labeled.
+  * If there are two or more primary parameters that are different, all of them should be labeled.
+  * If a function has only a single parameter, it tends to be unlabeled, even if it is not strictly primary.
 
 ### Arguments
 

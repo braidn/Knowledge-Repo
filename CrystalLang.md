@@ -6,6 +6,14 @@
 * Comes with a build in templating library called 'ecr'
   * much like erb for Ruby.
 
+## Macros
+
+* Methods that receive AST nodes at compile time.
+* Can be thought of much like Clojure Macros.
+  * want to change some code at compile time? A macro is how we can parse the AST and make changes.
+* These have hook methods (`inherited`, `included`, `extended`, `method_missing`) that are invoked situationally.
+
+
 ## Testing
 
 * Crystal ships with a competent spec suite that is very familiar to RSpec.
