@@ -1,3 +1,5 @@
+# Active Admin
+
 ##Index
 
 - If modifications are needed create an `index do ... end` block
