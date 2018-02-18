@@ -72,6 +72,11 @@ the parenthesis around the param can be omitted.
  * ex: `type intCoords = (int, int, int)`
  * use: `let myCoords: intCoords = (10, 10, 10)`
 * Types, if not using the type keyword, are inferred for us.
+* Type variables is a way for a type to take a generic type and have it remain throughout the type def.
+  * these are usually parameters to a type def: `type myRadio('a)`
+* Option values allow the use of the `None` type which can be thought of as a Null/Nil elsewhere.
+  * these are defined by: `option('a)`
+  * errors are also prefixed specially by: `result('a)`
 
 ## Destructuring
 
@@ -107,6 +112,9 @@ the parenthesis around the param can be omitted.
 
 ## Modules
 
+* Modules are tied to the naming of files at the files sytem level.
+  * CapitalCamelCase is also the default for naming (somewhat different than other langugaes).
+  * Submodules are usually defined in the scope of these file level modules.
 * Much like in every other language: Modules are a way to namespace and encapsulate code functunality.
 * One large Reason pattern is to have a main type per module with the name `t`
   * ex: `SomeModule.t.someMethodOrVar`
@@ -115,6 +123,27 @@ the parenthesis around the param can be omitted.
   * also often called 'initialization' where a new version of something is created (OO baby!)
 * To pass these around we use the `open` keyword followed by the module namespace.
   * This pulls all values from the module into the current scope (where `open`) was invoked.
+* Sometimes you want to pull modules in locally to avoid name clashes.
+  * ex: `let () = Log.(make() |> someLogFn("Hellow"))`
+* Sometimes these are encapsulated in an immediate invoking unit:
+  * ex: `let () => { print_string("Hello World!") };`
+* There is even the `include` keyword to pull modules into specific scopes.
+  * this has a very similiar type of action to Ruby's module `include`.
+  * even Interfaces can be included in one another (drastically easing on the code duplication)
+
+## Interfaces
+
+* Control what what or how much is exported from Modules or `re` files.
+* Usually named the same/in the same dir as the module but ends with a `rei` extension
+  * These are patterns set forth in Ocaml.
+* Sometimes these files are also called 'signatures'
+* Each item in this file is a type signature: `let times: (int, int) => int;`
+  * Any signatue defined in this file will be automatically exported.
+  * This means leaving anything out of these files will omit them from being exported (IE hidden)
+* Bucklescript has the ability to auto generate these files for us (if we are lazy)
+* Interfaces can include modules indirectly if an interface is not availble for named inclusion
+  * ex: `include (module type of Log);`
+  * The trick here being any module that is of the above type will need to include module `Log`
 
 ## Data Structures
 
