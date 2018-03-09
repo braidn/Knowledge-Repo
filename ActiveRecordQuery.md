@@ -6,6 +6,9 @@
 * the `OR` for `where` clause can be an array:
   * `Product.where(channel: ['mobile', 'ios', 'android']).
   * Will return all products that have a channel of 'mobile' or 'ios' or 'android'.
+* There are two different ways to load associations into finders:
+  * `.joins` will lazy load the associations passed in.
+  * `.includes` will eager load the associations when passed in.
 
 # Best Practices
 
