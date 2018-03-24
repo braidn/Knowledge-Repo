@@ -16,6 +16,7 @@
 * The __flatter the data, the better__.
   * A way to do this semi-automagically is to use [Normalizer][1].
   * Returning data like this is always going to be wildly easier for all JS apps.
+  * This should almost be a default if an API returns deeply nested items (think JSONAPI).
 * Make actions super simple, and slim.
   * Extract actions that create data, use XHR requests, or induce side effects into action creators.
 * Utilize reducer composition to break up the almost inevitably large 'root reducer'.
@@ -53,5 +54,16 @@
   * this can be done easily by setting expected before and after state objects and invoking the reducer with the action
 * A handy way to make sure reducers don't mutate state is to use a [library like deep-freeze][2] when testing
 
+## File System
+
+* Since there is really no 'convention' around how reducers/actions are stored, 
+file systems can be deeply nested and messy.
+* This causes developers to hop from file to file and sometimes get lost.
+* There is a pattern called [Ducks][duk] that alleviates this constant context switching.
+  * Each module exports a default function called `reducers()`,
+  * exports its action creators as functions,
+  * exports it's action types in the form of: `module-app-name/reducer/ACTION_TYPE`
+
 [1]: https://github.com/paularmstrong/normalizr
 [2]: https://github.com/substack/deep-freeze
+[duk]: https://github.com/erikras/ducks-modular-redux
