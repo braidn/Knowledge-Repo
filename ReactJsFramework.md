@@ -82,6 +82,18 @@
 * [React Testing][3]
 * When testing composed components, make sure to shallow render. This will render the component but not it's children. Otherwise tests can and will get pretty heavy.
 
+
+###Best Practices
+
+* [Typescript][ts]:
+  * Yes types can be super fiddly but, as a project grows, types become a wonderful safety net.
+  * Not to mention, how well TS integrates with editors and accelerates the correct use of typed fns.
+  * This also drastically reduces build complexity which can be a bottleneck in larger apps.
+* Where it makes sense, split up monorepos with [Lerna][lern] and [Yarn Workspaces][ywp]
+  * This also will allow devs to know what parts of the repo a change affects,
+  * which leads to devs being more confident around changes, pushing more code, more often.
+
+
 ###External links
 
 1. [Docs][2]
@@ -89,3 +101,6 @@
 [1]: http://davidwalsh.name/event-delegate
 [2]: http://facebook.github.io/react/docs/getting-started.html
 [3]: /ReactTesting
+[ts]: /TypeScript
+[lern]: https://github.com/lerna/lerna/
+[ywp]: https://yarnpkg.com/lang/en/docs/workspaces/
