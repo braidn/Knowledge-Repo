@@ -20,6 +20,8 @@ A Javascript/OCaml ecosystem.
 * The Bucklescript compiler is super smart and will remove unused code where needed.
   * It will also inline function invocation if it can decern the output.
   * All of this makes for heavy optimization in the JS output.
+* Reason ships with a REPL so testing ideas/code is as easy as IRB.
+  * to start it: `rtop`
 
 ## Functions
 
