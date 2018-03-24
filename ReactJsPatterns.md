@@ -9,6 +9,27 @@
 * If we need to get reference to a DOM element there is the [`ref` keyword][2]
 * Extracting components into their smallest possible state will lead to more and more testability.
 
+###Component Hierarchy
+
+* This is best thought of as an outline of the application.
+  * Which components will live in others, etc.
+* A sensible way to construct this would be to take your component hierarchy and build it with mock data.
+  * building this static version takes a lot of typing but little thinking.
+  * Once finished, the interactivity part can occur which takes little typing and lots of thinking.
+
+#### State
+
+* Passing of data from parent to child in this model should only rely on props (not state).
+  * state is reserved 99% of the time for interactivity.
+* When building this static version, on can go bottom up or top down. 
+  * In larger, more complex apps, it's more advantageous to start bottom up and test.
+* When starting, a team should come up with the most minimal amount of mutable state.
+* Three good questions to ask when figuring out state:
+  1. Is it passed in from a parent via props? If so, it probably isn’t state.
+  1. Does it remain unchanged over time? If so, it probably isn’t state.
+  1. Can you compute it based on any other state or props in your component? If so, it isn’t state.
+* It's also best practice to figure out what component should own the state.
+
 ###Higher-order Components
 
 * Look very similar to [the decorator design pattern](JsDesignPatterns#pattern-list_decorator).
