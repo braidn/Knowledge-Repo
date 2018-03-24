@@ -118,7 +118,7 @@ the parenthesis around the param can be omitted.
 * Much like in every other language: Modules are a way to namespace and encapsulate code functunality.
 * One large Reason pattern is to have a main type per module with the name `t`
   * ex: `SomeModule.t.someMethodOrVar`
-* Sometimes/often there is a make function that's sets up the module at runtime.
+* Sometimes/often there is a make function that sets up the module at runtime.
   * this is not a Reason pattern but, an Ocaml one.
   * also often called 'initialization' where a new version of something is created (OO baby!)
 * To pass these around we use the `open` keyword followed by the module namespace.
@@ -167,6 +167,10 @@ the parenthesis around the param can be omitted.
     | Always => 'Chamon, push yourself'
     }
     ```
+* These can even be polymorphic which is more of a way to extend or compose variants. 
+  * this allows the programmer to build complex, and powerful type hierarchies.
+* Although polymorphic variants are usable, they aren't as strict as regular variants.
+  * due to this, it's highly recommended to reach for polymorphic variants only when absolutely needed.
 * Variant's can tell the programmer if a condition hasn't been thought of.
 * They can also can detect if a branch is redundant and removable (refactorability).
 * Variants can hold extra bit's of data:
