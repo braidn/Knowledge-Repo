@@ -28,3 +28,5 @@
 * `DELETE FROM tableName;`: wipe a table clean
 * `select * from pg_stat_activity where datname='YourDatabase';` to list connections
 * `SELECT relation::regclass, * FROM pg_locks WHERE NOT GRANTED;` to check all items locking the db.
+* `create sequence some_table_id_seq owned by some_table.id` to create a unique id sequence
+  * `alter table some_table alter column id set default nextval('some_table_id_seq')` to setup the sequence.
