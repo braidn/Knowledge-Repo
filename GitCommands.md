@@ -31,7 +31,7 @@
 
 #### Changing files included in previous commit
 
-1. git-checkout <bad-commit>
+1. git-checkout bad-commit-sha  
    ... make your changes ...
 2. git-commit --amend -v
 3. git-rebase --onto HEAD <bad-commit> <checked-out-branch>
