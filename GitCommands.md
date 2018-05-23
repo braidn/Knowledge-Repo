@@ -26,3 +26,12 @@
 ### GitHub or _HUB_
 
 * Turn issue into pr: `hub pull-request -i issue# -h owner:name/of/branch`
+
+### Rewriting
+
+#### Changing files included in previous commit
+
+1. git-checkout <bad-commit>
+   ... make your changes ...
+2. git-commit --amend -v
+3. git-rebase --onto HEAD <bad-commit> <checked-out-branch>
