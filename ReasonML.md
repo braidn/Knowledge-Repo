@@ -22,35 +22,46 @@ A Javascript/OCaml ecosystem.
   * All of this makes for heavy optimization in the JS output.
 * Reason ships with a REPL so testing ideas/code is as easy as IRB.
   * to start it: `rtop`
+  * this is a great way to play with the language, think irb for Ruby.
+* Most of the language and programs is lexical scoped.
+  * this really applies to let bindings within a specific scope.
+  * this also means that using blocks to create local scope is a big concept, like Ruby.
+  * Scope like this is created by encapsulating logic in `{}`
+* Structural comparativeness runs pretty deep in the language.
+  * ex: `(true, [{name: "bob", city: "toronto"}]) == (true, [{name: "bob", city: "toronto"}]);`
+  * most folks use this throughout the language because it's resource wise cheaper.
+* Referential comparing is done just like in JS using the threequal operator: `===`
 
 ## Functions
 
 * Functions are defined like es6 fat arrow functions.
 * They can be either single line:
-  * `let someFunc = (name) => "Hellow" ++ name `
+  * `let someFunc = (name) => "Hellow" ++ name`
   * or multiple lined using the block syntax
-* If a func has a single param and is defined by an identifier, 
-the parenthesis around the param can be omitted.
+* If a func has a single param and is defined by an identifier,
+  the parenthesis around the param can be omitted.
 * Mutually recursive functions are defined using the `and` keyword
+* There is no need for an explicit return in a function.
 * There are no nullary functions in the language.
   * The compiler will add a `unit` to a null func if defined.
   * The reason here is Reason returns partial applications, much like Elm.
 * Some function signature rules:
-  * If a function has a single primary parameter, 
-  make it a positional parameter and put it at the end. 
-  That supports the pipe operator for function composition.
-  * Some functions have multiple primary parameters that are all similar. 
-  Turn these into multiple positional parameters at the end. 
-  An example would be a function that concatenates two lists into a single list. 
-  In that case, both positional parameters are lists.
+  * If a function has a single primary parameter,
+    make it a positional parameter and put it at the end.
+    That supports the pipe operator for function composition.
+  * Some functions have multiple primary parameters that are all similar.
+    Turn these into multiple positional parameters at the end.
+    An example would be a function that concatenates two lists into a single list.
+    In that case, both positional parameters are lists.
   * All other parameters should be labeled.
   * If there are two or more primary parameters that are different, all of them should be labeled.
   * If a function has only a single parameter, it tends to be unlabeled, even if it is not strictly primary.
 
 ### Arguments
 
-* Reason *enforces* arguments to every function.
+* Reason _enforces_ arguments to every function.
 * If a function doesn't require a argument, a unit: `()` is passed instead.
+* Only labeled arguments can have a default value `...(~lastName="douglass", ...)`
 * Arguments can be labeled if needed.
   * ex (called 'punning sugar'): `let mapCoordinates = (~y, ~x) => ...`
   * when calling: `mapCoordinates(~x=44, ~y=34)`
@@ -59,6 +70,7 @@ the parenthesis around the param can be omitted.
   * The function will be called with the lat name and the block will utilize the x name
 * Currying is completely built in.
   * Any function can be curried and this currying is optimized by the language.
+  * The return of the original function is a function that can be applied.
 * Optional arguments are defined as: `let mapCoordinates = (~color=?...) => ...`
   * The standard lib has an option type and that's what color would be.
   * These can be passed a 'default argument' which set's their type as the value passed.
@@ -71,14 +83,17 @@ the parenthesis around the param can be omitted.
 ## Types
 
 * Types can accept arguments (generics) which lead to composability and easy reuse.
- * ex: `type intCoords = (int, int, int)`
- * use: `let myCoords: intCoords = (10, 10, 10)`
+* ex: `type intCoords = (int, int, int)`
+* use: `let myCoords: intCoords = (10, 10, 10)`
 * Types, if not using the type keyword, are inferred for us.
 * Type variables is a way for a type to take a generic type and have it remain throughout the type def.
   * these are usually parameters to a type def: `type myRadio('a)`
 * Option values allow the use of the `None` type which can be thought of as a Null/Nil elsewhere.
   * these are defined by: `option('a)`
   * errors are also prefixed specially by: `result('a)`
+* Types are often times composed together.
+* If a dev wanted, they could shadow a previously defined type with a new type.
+  * This is somewhat confusing but shows the power of the type system.
 
 ## Destructuring
 
@@ -90,19 +105,21 @@ the parenthesis around the param can be omitted.
 ## Pattern Matching
 
 * Used to make sure a program complies with all possible use cases:
-    ```
-    type response =
-    | Good(string)
-    | Bad(int)
-    | Waiting
 
-    let data = Good("you did it");
-    let message = 
-      switch data {
-      | Good(message) => "We are excited" ++ message
-      | Bad(errorCode) => "Woops, error found: " ++ errorCode
-      };
-    ```
+  ```
+  type response =
+  | Good(string)
+  | Bad(int)
+  | Waiting
+
+  let data = Good("you did it");
+  let message =
+    switch data {
+    | Good(message) => "We are excited" ++ message
+    | Bad(errorCode) => "Woops, error found: " ++ errorCode
+    };
+  ```
+
 * The above will throw an error because not all patterns were taken into consideration.
 * A special unmatched case is always available using the `_` operator.
   * kind of like a fall through case.
@@ -114,7 +131,7 @@ the parenthesis around the param can be omitted.
 
 ## Modules
 
-* Modules are tied to the naming of files at the files sytem level.
+* Module
   * CapitalCamelCase is also the default for naming (somewhat different than other langugaes).
   * Submodules are usually defined in the scope of these file level modules.
 * Much like in every other language: Modules are a way to namespace and encapsulate code functunality.
@@ -151,56 +168,59 @@ the parenthesis around the param can be omitted.
 
 ### Variant!
 
-* ex: 
-    ```
-    type myResponse = 
-    | Yes
-    | No
-    | Always
-    ```
+* ex:
+  ```
+  type myResponse =
+  | Yes
+  | No
+  | Always
+  ```
 * These values above are known as 'constructors' or tags.
+  * the term tags is used because in CS this is known as 'tag unions'.
 * Each variant's constructors need to be defined using capital case
 * These structures lean heavily on the switch statement:
-    ```
-    let message =
-    switch myResponse {
-    | No => 'Good luck'
-    | Yes => 'Keep it up'
-    | Always => 'Chamon, push yourself'
-    }
-    ```
-* These can even be polymorphic which is more of a way to extend or compose variants. 
+  ```
+  let message =
+  switch myResponse {
+  | No => 'Good luck'
+  | Yes => 'Keep it up'
+  | Always => 'Chamon, push yourself'
+  }
+  ```
+* These can even be polymorphic which is more of a way to extend or compose variants.
   * this allows the programmer to build complex, and powerful type hierarchies.
 * Although polymorphic variants are usable, they aren't as strict as regular variants.
   * due to this, it's highly recommended to reach for polymorphic variants only when absolutely needed.
 * Variant's can tell the programmer if a condition hasn't been thought of.
 * They can also can detect if a branch is redundant and removable (refactorability).
 * Variants can hold extra bit's of data:
-    ```
-    type account =
-    | None
-    | Twitter(string)
-    | Facebook(string, int)
-    ```
+  ```
+  type account =
+  | None
+  | Twitter(string)
+  | Facebook(string, int)
+  ```
+  * when pattern matching these variants with extra data, we can pass types or specific items.
+* Reason also uses `None` and `Some(value/values)` to get around the concept of Null in varaiants.
 
 ### Record
 
 * Very similiar to a JS object.
   * Much faster, immutable, and typed
 * ex:
-    ```
-    type person = {
-      age: int,
-      name: string
-    };
-    ```
+  ```
+  type person = {
+    age: int,
+    name: string
+  };
+  ```
 * use:
-    ```
-    let dad = {
-      age: 50,
-      name: "Pops"
-    };
-    ```
+  ```
+  let dad = {
+    age: 50,
+    name: "Pops"
+  };
+  ```
 * Dot notation is used to access items in a record.
 * Like in Elm, these will be written/listed in a type file.
   * These files are often times capitalized names for the types within.
@@ -209,6 +229,7 @@ the parenthesis around the param can be omitted.
 * Since all records are immutable we need to create new ones when we alter a value.
   * the spread operator helps us here: `let newMe = { ...me, age: me.age + 1 }`
   * The `mutable` keword can be used when defining a type to get around this.
+    * ex: `lion = { mutable scary: bool }`
 
 ### Object
 
@@ -232,20 +253,20 @@ the parenthesis around the param can be omitted.
 * Must contain all of the same type and are still immutable.
 * They are however, extremely fast at prepending and splitting.
 * The efficency of lists is done by sharing information between two lists:
-    ```
-    let listOne = [1,2,3];
-    let listTwo = [0, ..listOne];
-    ```
+  ```
+  let listOne = [1,2,3];
+  let listTwo = [0, ..listOne];
+  ```
 * In the above listTwo resolves to: `[0,1,2,3]` but references the last three items.
 * There are quite a few functions available to access specific values using the List lib.
 * Switches + pattern matching are usable when cycling through a list:
-    ```
-    let message =
-      switch myList {
-      | [] => "Empty"
-      | [a(head), ...rest] => "The first item in the list is" ++ a
-      };
-    ```
+  ```
+  let message =
+    switch myList {
+    | [] => "Empty"
+    | [a(head), ...rest] => "The first item in the list is" ++ a
+    };
+  ```
 * Use the `@` operator to concatentate two lists together.
 
 ### Array
@@ -253,5 +274,6 @@ the parenthesis around the param can be omitted.
 * Arrays are very much like lists but, are mutable and faster at random access/writes.
 * The difference when defining them: `[|1, 2|]`
 * Accessing arrays is very much like JS: `myArr[0]` to get a specific item.
+* There are quite a few StdLib functions available on `Array`
 
 [cht]: https://reasonml.github.io/guide/javascript/syntax-cheatsheet
