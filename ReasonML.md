@@ -243,9 +243,10 @@ the parenthesis around the param can be omitted.
     let message =
       switch myList {
       | [] => "Empty"
-      | [a, ...rest] => "The first item in the list is" ++ a
+      | [a(head), ...rest] => "The first item in the list is" ++ a
       };
     ```
+* Use the `@` operator to concatentate two lists together.
 
 ### Array
 
