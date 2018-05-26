@@ -31,6 +31,11 @@ A Javascript/OCaml ecosystem.
   * ex: `(true, [{name: "bob", city: "toronto"}]) == (true, [{name: "bob", city: "toronto"}]);`
   * most folks use this throughout the language because it's resource wise cheaper.
 * Referential comparing is done just like in JS using the threequal operator: `===`
+* References to objects are created by: `let foo = ref(someValue);`
+  * to change this value: `foo := 8;`
+  * to access this value: `foo^;`
+  * these are particularly handy in storing global references that can be passed around/changed over time.
+  * Use sparringly!
 
 ## Functions
 
@@ -104,6 +109,9 @@ A Javascript/OCaml ecosystem.
 
 ## Pattern Matching
 
+* Performs two operations:
+  * matches on a specific use case or cases.
+  * extracts part of the match and passes it to the result or return of the match.
 * Used to make sure a program complies with all possible use cases:
 
   ```
@@ -128,6 +136,15 @@ A Javascript/OCaml ecosystem.
   * this shouldn't be overused though.
 * Exceptions can be used throughout this process by using the `exception exception_name` pattern.
 * Throughout, this will be way more performant than if/elses.
+* We can assign matches to variables and use the variables in the response to the match.
+  * `head` and `...tail` can be used when pattern matching lists
+* Arrays can only be matched on their specific length.
+* Records can match exact values.
+  * and using puning, we can capture the record item's value and pass it through to the match.
+* The `|` character can be used to match multiple cases to the same result:
+  * ex: `| 1 | 2 | 3 => "These are valid numbers"`
+  * this is also usable when matching on types:
+    * ex: `| Error(500 | 501 | 502) => "Errors encountered"`
 
 ## Modules
 
@@ -142,6 +159,8 @@ A Javascript/OCaml ecosystem.
   * also often called 'initialization' where a new version of something is created (OO baby!)
 * To pass these around we use the `open` keyword followed by the module namespace.
   * This pulls all values from the module into the current scope (where `open`) was invoked.
+  * this can also be done using: `School.(SomethingInSchool => "Scopeing achieved!");`
+  * this is often times called 'local opening' and is often times the safest way of opening a module.
 * Sometimes you want to pull modules in locally to avoid name clashes.
   * ex: `let () = Log.(make() |> someLogFn("Hellow"))`
 * Sometimes these are encapsulated in an immediate invoking unit:
@@ -275,5 +294,11 @@ A Javascript/OCaml ecosystem.
 * The difference when defining them: `[|1, 2|]`
 * Accessing arrays is very much like JS: `myArr[0]` to get a specific item.
 * There are quite a few StdLib functions available on `Array`
+
+## Exceptions
+
+* Like everything they can be pattern matched.
+* Often times though the `Not_Found` is thrown.
+* Use sparringly!
 
 [cht]: https://reasonml.github.io/guide/javascript/syntax-cheatsheet
