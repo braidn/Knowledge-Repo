@@ -46,8 +46,6 @@
 * The DOM diff is done through a virtualDOM which is not a shadowDOM
   * shadowDOM's are browser specific, this is not.
 * Use `getDOMNode()` on a component to grab it's native DOM element. (handy in getting input data)
-* As of 16.3, React gives us a `.createRef()`
-  * This is golden if you want to encapsulate a reference to a node in the constructor/lifecycle methods.
 
 ###Synthetic Events
 
