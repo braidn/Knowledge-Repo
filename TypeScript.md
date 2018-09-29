@@ -96,6 +96,7 @@ interface Food {
   * ex: `namespace Utility { export function someFunc(someParams) }`
   * the above could be called using: `Utility.log('hello')`
 * Namespacing can be nested allowing for all kinds of buckets.
+  * when nesting namespaces, the export keyword is required to chain multiple namespaces.
 
 ## Enums
 
