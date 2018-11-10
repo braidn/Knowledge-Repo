@@ -16,6 +16,11 @@
 * `req` item handles flash and session items
 * `res` item handles rendering and redirect items
 
+## Params
+
+* Preprocessing can be done on all parameters using a concept called 'route params'
+* Great place to do validation/database fetches.
+
 ## Routes
 
 * Url handling is key and with express you need to instantiate each url/route
