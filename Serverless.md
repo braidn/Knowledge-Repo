@@ -13,6 +13,7 @@
 * Getting the right granularity for functions is a particular skill that needs to be developed.
   * Functions should do the bare minimum but if they too little they are hard to debug.
   * Minimizing the amount of data transformations will also help keep granularity manageable.
+* Attempt/strive to reduce the number of steps a system takes to perform an action
 
 ## Principles
 
@@ -49,6 +50,10 @@
 
 * If the serverless functions are running in lambda, the run-local-lambda package can invoke handlers with event data.
   * This is handy because its' output can be asserted on (ala Jest/Mocha/Testing frameworks)
+
+## Authentication
+
+* It's pretty common here to use some type of JSON Web Tokens or delegation tokens for this.
 
 ## Nomenclature
 
