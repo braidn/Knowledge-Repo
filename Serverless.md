@@ -14,6 +14,8 @@
   * Functions should do the bare minimum but if they too little they are hard to debug.
   * Minimizing the amount of data transformations will also help keep granularity manageable.
 * Attempt/strive to reduce the number of steps a system takes to perform an action
+* DB's also have to be super fast in a Serverless architecture.
+* Event driven micro-services is a great medium to build into Serverless functions/applications.
 
 ## Principles
 
