@@ -16,6 +16,8 @@
 * Attempt/strive to reduce the number of steps a system takes to perform an action
 * DB's also have to be super fast in a Serverless architecture.
 * Event driven micro-services is a great medium to build into Serverless functions/applications.
+* Avoid functions calling other functions. 
+	* This removes the isolation aspect of a single function and doubles cost.
 
 ## Principles
 
