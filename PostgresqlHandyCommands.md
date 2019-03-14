@@ -6,6 +6,7 @@
 * `sudo su {postgres|$WHOAMI} -c psql`: log into postgres command line with
   postgres user
 * `dropdb db_name` also is a quick way to terminate a database
+* `drop role name` for stuck roles or one's that are hanging around
 * When connecting locally simply use: `psql -d name_of_db`
 
 ###PSQL Prompt
