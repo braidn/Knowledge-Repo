@@ -5,6 +5,8 @@
 * Async JS pattern that allows you to write less right leaning code.
 * Always in a state of resolved or rejected.
 * Control flow is used by chaining `then` and `catch` functions.
+* Map/Reduce functions are syncronous which means the promise's are unable to resolve until called.
+  * A good way to return a collection of them: `await Promise.all(arrayOfPromises)`
 
 ## Async/Await
 
