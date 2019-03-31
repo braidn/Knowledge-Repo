@@ -22,6 +22,11 @@
   * Scheduling perodic events to keep the handler warm.
   * Increase overall memory allocated to the handler.
   * Move all initialization and setup code out of the handler.
+* Handlers are passed an event object on invocation.
+  * this object contains query string params, headers, etc.
+* Caching can be done at the API Gateway level.
+  * cacheing can be done on URL params, query strings, whatever.
+  * Like most caching though, there is a good amount of tweaking to get things right here.
 
 ### Programming
 
