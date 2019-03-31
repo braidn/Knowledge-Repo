@@ -50,6 +50,13 @@
   * Often times used to work with complex data or video.
   * Perfect for any task that has multiple steps to get to a particular result.
 
+## Data Layer
+
+* Perhaps one of the trickiest parts of working effectively within a serverless architecture
+* The idea of distributed systems here is essential in successfully creating a data layer that’s not too rigid. 
+* One of the best approaches is to look into CQRS tooling. 
+* Sometimes it is helpful to think of data as a fluid object throughout the system versus a stationary object that the system pulls from. 
+
 ## Testing
 
 * If the serverless functions are running in lambda, the run-local-lambda package can invoke handlers with event data.
