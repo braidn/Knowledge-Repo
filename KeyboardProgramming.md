@@ -14,7 +14,7 @@
 * Uses the Docker instructions below.
   * The controller on this board is a `atmega32u2` and not the u4 variant
 
-## Clueboard
+## HotDox
 
 * Uses the Docker instructions below.
 

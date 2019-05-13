@@ -174,14 +174,17 @@ A Javascript/OCaml ecosystem.
 * Control what what or how much is exported from Modules or `re` files.
 * Usually named the same/in the same dir as the module but ends with a `rei` extension
   * These are patterns set forth in Ocaml.
-* Sometimes these files are also called 'signatures'
+* Sometimes these files are also called 'module signatures'
 * Each item in this file is a type signature: `let times: (int, int) => int;`
   * Any signatue defined in this file will be automatically exported.
   * This means leaving anything out of these files will omit them from being exported (IE hidden)
 * Bucklescript has the ability to auto generate these files for us (if we are lazy)
+* Doc comments in these rei files will be exported along witht he API.
+  * ex: `/** */`
 * Interfaces can include modules indirectly if an interface is not availble for named inclusion
   * ex: `include (module type of Log);`
   * The trick here being any module that is of the above type will need to include module `Log`
+* These files are comile-time only constructs and don't matter at runtime.
 
 ## Data Structures
 
