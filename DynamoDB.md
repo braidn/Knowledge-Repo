@@ -1,4 +1,4 @@
-# DynamoDB (NoSQL)
+# DynamoDB
 
 ## Notes
 
@@ -39,6 +39,7 @@
 * Searched by primary key and or sort key.
 * Able to use filter attributes and filter expresiions.
 * Maximum return is 1MB.
+* Look to build querys or results that minimize round trips to hydrate data
 
 ## Data Modeling
 
@@ -60,5 +61,12 @@
   * One => Few: embed
   * One => Many: ref
   * One => Zillions: ref (sub table with DynamoDB)
+
+## Data Modeling Steps
+
+1. Always start with something high level, using a google sheet while boring can help think out top level schema.
+2. Bring these ideas into the DynamoDB interface or a GUI locally.
+3. Check the design to see if it satisfies the current queries
+4. If yes, go to code, if no, go back to the beginning.
 
 [gql]: /GraphQL
