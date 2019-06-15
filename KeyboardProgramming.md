@@ -18,6 +18,11 @@
 
 * Uses the Docker instructions below.
 
+## M60a
+
+* To put the PCB in DFU mode, hold the esc key while plugging in the keyboard.
+* Follow the Docker instructions below.
+
 ## Whitefox
 
 * Building .bin's at the moment is a little tricky with the current QMK makefile.
@@ -35,7 +40,7 @@
 ## Dockerized QMK Make
 
 * Create a hex file using the qmk/docker image:
-  * `docker run -e keymap=braden -e subproject= -e keyboard=ergodox --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware`
+  * `util/docker_build.sh rama/m60_a:braden`
 * Click the reset switch on the keyboard
 * This command resets the firmware: `dfu-programmer atmega32u4 erase`
 * and this command uploads the new firmware: `dfu-programmer atmega32u4 flash fileofyourfirmware.hex`
