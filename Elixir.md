@@ -154,7 +154,7 @@
   * ex: `def is_awesome(n) when is_atom(n) do`
   * Handy way to control whether a recursive function will be called through pattern matching.
   * There are is a limited amount of expressions that function in guard clauses so be careful.
-* Default params are a possibility using: `param \\ default value` syntax`.
+* Default params are a possibility using: `param \\ default value syntax`.
 * Private functions are defined using the `defp` syntax over the `def` syntax.
 * `|>` operator takes the result of the expression on it's left and passes it to as the first param to the function on it's right.
   * This is also called a 'pipeline'.
