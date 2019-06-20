@@ -199,7 +199,7 @@
 
 ### Sigils
 
-* 'Magically imbued symbols` that begin with a tilde.
+* Magically imbued symbols that begin with a tilde.
 * Identical to the `%w{...}` syntax found in the Ruby world.
 * The char that follows the tilde can be either uppercase or lowercase depending on intent.
 
