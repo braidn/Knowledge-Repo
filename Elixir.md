@@ -27,6 +27,10 @@
 ## Iex Prompt
 
 * Wrap a function/item in `h()` for help.
+* To recompile a file on the fly:
+  * `c "fileName.ex"`
+* When compiling and running a mix application:
+  * `iex -S mix`
 
 ## Lists
 
@@ -49,7 +53,7 @@
 * Like most things in Elixir, pattern matching plays a big role in Maps.
 * Maps do not allow binding of a value to a key during pattern matching. 
 * Like most things in Elixir, Maps are immutable and updating one cause a new copy.
-  * can be done by: `new_map = %{ old_map | key => val }`.
+  * can be done by: `new_map = %{ old_map | key: val }`.
   * all assignment changes happen after the pipe operator.
   * this is _only_ for changing existing keys, not removing or adding.
 
@@ -139,6 +143,7 @@
 
 ### Function Body/Block
 
+* Must always be part of a module.
 * Underlying Elixir code for the block looks like: `def method(n), do: n * 2`
   * Any amount of lines, using () can be passed to ().
   * `do/end` blocks are just syntactic sugar and at compile time get morphed into the above.
@@ -155,10 +160,12 @@
   * Handy way to control whether a recursive function will be called through pattern matching.
   * There are is a limited amount of expressions that function in guard clauses so be careful.
 * Default params are a possibility using: `param \\ default value syntax`.
+  * Under the hood, the compiler generates two different functions with diff arities.
 * Private functions are defined using the `defp` syntax over the `def` syntax.
 * `|>` operator takes the result of the expression on it's left and passes it to as the first param to the function on it's right.
   * This is also called a 'pipeline'.
   * ALWAYS put parens around function params in pipelines.
+  * and perhaps always use them when calling functions, otherwise things can be too ambiguous.
 
 ## Modules
 
@@ -166,6 +173,9 @@
 * There are several directives for modules [`import`, `alias`, `require`].
   * All directives are lexical scoped so their scope will be within the module definition (usually).
 * These can be seen as a layer of abstraction on top of primitives.
+* Modules can have attributes assigned to them:
+  * `@ AttributeName` is used to set the attribute for use throughout the rest of the module
+  * Often times these are used for annotations/docs/temporary storage in a module.
 
 ### Import
 
