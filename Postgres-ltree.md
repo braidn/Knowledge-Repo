@@ -2,6 +2,9 @@
 
 ## Notes
 
+* Reasons for use:
+  * Generally faster than CTE's or recursive balancing functions.
+  * Adds some nice syntax and built ins to the language to deal with the structures.
 * The nlevel and subpath functions below are handy for writing efficient updates to a tree:
   * ex: `update tree set path = subpath(path, nlevel('A.C')-1) where path <@ 'A.C';`
 * The concatenation operator below is great for moving branches around a tree:
