@@ -1,3 +1,5 @@
+#Javascript Strings
+
 ##Notes
 
 * Javascript strings can be chained together with the + method.
