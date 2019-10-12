@@ -9,8 +9,10 @@
 * Import all keys from keybase
   * `curl https://keybase.io/<your-username>/key.asc | gpg --import`
 * Import secret keys from keybase
-  * Pull the secret key from keybase's web ui
-  * `gpg --allow-secret-key-import --import keybase-private.key`
+  * Pull the secret key from keybase: `keybase pgp export -s`
+  * Use a known secret that you will remember enough long enough to input in Pinentry
+  * Save the key quickly and import it:
+    * `gpg --allow-secret-key-import --import keybase-private.key`
 * Trust the keys.
   * `gpg --edit-key user@useremail.com`
   * `trust` at the gpg prompt
