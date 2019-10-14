@@ -1,6 +1,6 @@
 # Angular 2
 
-[[_TOC_]]
+[[toc]]
 
 ## Notes
 
