@@ -1,4 +1,8 @@
-##Notes
+# Ajax
+
+[[toc]]
+
+## Notes
 
 * `load` is the most simple, it fetches data from the server and places it into 
 the matched element
@@ -8,13 +12,13 @@ the matched element
 	* when using this often times a form is sent, use the `serialize` method to send 
 	form data
 
-###AjaxMethod
+### AjaxMethod
 
 * `ajax` method is the lowest level method, all others work with this specifically
 * `contentType:` tells the server what kind of data you are sending
 * where `dataType:` tells you what kind of data the server is returning
 
-###AjaxSetup
+### AjaxSetup
 
 * Most are considered globabal "Ajax Event Handlers"
 * Several methods can be used to fire events depending on ajax timing
@@ -22,7 +26,7 @@ the matched element
 * `ajaxError` will fire when your ajax isn't working quite right
 * Many of the variables like `dataType` can be set here
 
-###JSONP
+### JSONP
 
 * A call from the client to the api is made along with specifying a specfic function
 	* the server responds and keys and values within the function name specified
@@ -30,7 +34,7 @@ the matched element
 	* just send `callback=?` as a special key into the url.
 	* jQuery will than throw the response into the success function
 
-###Rails
+### Rails
 
 * When using `heads :ok` rails actually returns a json string containing a single space.
   *  This is not considered valid and will not allow a success block to fire when using jQuery.
