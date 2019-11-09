@@ -91,6 +91,7 @@ A Javascript/OCaml ecosystem.
 * ex: `type intCoords = (int, int, int)`
 * use: `let myCoords: intCoords = (10, 10, 10)`
 * Types, if not using the type keyword, are inferred for us.
+  * The Hindley Milner type system is what attempts to find the most general type available.
 * Type variables is a way for a type to take a generic type and have it remain throughout the type def.
   * these are usually parameters to a type def: `type myRadio('a)`
 * Option values allow the use of the `None` type which can be thought of as a Null/Nil elsewhere.
