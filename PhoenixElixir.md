@@ -1,6 +1,6 @@
 # Pheonix
 
-[toc]
+[[toc]]
 
 ## Notes
 
