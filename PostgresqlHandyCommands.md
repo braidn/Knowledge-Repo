@@ -1,6 +1,6 @@
-#PSQL Handy Commands
+# PSQL Handy Commands
 
-###CLI
+### CLI
 
 * `sudo -u {postgres|$WHOAMI} createdb my_site`: create a db
 * `sudo su {postgres|$WHOAMI} -c psql`: log into postgres command line with
@@ -9,7 +9,7 @@
 * `drop role name` for stuck roles or one's that are hanging around
 * When connecting locally simply use: `psql -d name_of_db`
 
-###PSQL Prompt
+### PSQL Prompt
 
 * `\? or \h COMMAND`: Get help
 * `\l`: list all databases
