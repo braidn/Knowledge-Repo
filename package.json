@@ -1,0 +1,22 @@
+{
+  "name": "b_wiki",
+  "version": "1.0.0",
+  "description": "A collection of knowledge",
+  "main": "npm run start",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braidn/Knowledge-Repo.git"
+  },
+  "keywords": [
+    "wiki"
+  ],
+  "author": "Braden Douglass <braden.douglass@gmail.com>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/braidn/Knowledge-Repo/issues"
+  },
+  "homepage": "https://github.com/braidn/Knowledge-Repo#readme"
+}
