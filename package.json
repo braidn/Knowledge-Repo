@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/braidn/Knowledge-Repo/issues"
   },
-  "homepage": "https://github.com/braidn/Knowledge-Repo#readme"
+  "homepage": "https://github.com/braidn/Knowledge-Repo#readme",
+  "dependencies": {
+    "hads": "^2.0.2"
+  }
 }
