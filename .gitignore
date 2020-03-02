@@ -1,3 +1,5 @@
+### System ###
+
 .DS_Store
 .SyncID
 .SyncIgnore
@@ -10,3 +12,17 @@ tags.lock
 tags.temp
 tags/
 tags/*
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+.npm
+node_modules/
+
+### Runtime data ###
+pids
+*.pid
+*.seed
+*.pid.lock
